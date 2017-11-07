@@ -49,7 +49,7 @@ public class DrmProfile {
 
 	public List<ProfileMasterdata> associatedCustomers = new ArrayList();
 	public List<ProfileSupervisedUser> supervisedUsers = new ArrayList();
-	public List<ProfileUser> associatedUsers = new ArrayList();
+	public List<ProfileMember> associatedUsers = new ArrayList();
 
 	public String getProfileId() {
 		return profileId;
@@ -99,11 +99,11 @@ public class DrmProfile {
 		this.supervisedUsers = supervisedUsers;
 	}
 
-	public List<ProfileUser> getAssociatedUsers() {
+	public List<ProfileMember> getAssociatedUsers() {
 		return associatedUsers;
 	}
 
-	public void setAssociatedUsers(List<ProfileUser> associatedUsers) {
+	public void setAssociatedUsers(List<ProfileMember> associatedUsers) {
 		this.associatedUsers = associatedUsers;
 	}
 

@@ -39,89 +39,56 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
  *
  * @author stfnnvl
  */
-public class WorkReportDetail {
-
-	private Integer id;
-	private String workReportId;
-	private Integer rowNo;
-	private Integer workTypeId;
-	private Integer duration;
-	private String rowFlag;
+public class ProfileMember {
 	
-	public Integer getId() {
+	public int id;
+	public String profileId;
+	public String userId;
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getWorkReportId() {
-		return workReportId;
+	public String getProfileId() {
+		return profileId;
 	}
 
-	public void setWorkReportId(String workReportId) {
-		this.workReportId = workReportId;
+	public void setProfileId(String profileId) {
+		this.profileId = profileId;
 	}
 
-	public Integer getRowNo() {
-		return rowNo;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setRowNo(Integer rowNo) {
-		this.rowNo = rowNo;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-
-	public Integer getWorkTypeId() {
-		return workTypeId;
-	}
-
-	public void setWorkTypeId(Integer workTypeId) {
-		this.workTypeId = workTypeId;
-	}
-
-	public Integer getDuration() {
-		return duration;
-	}
-
-	public void setDuration(Integer duration) {
-		this.duration = duration;
-	}
-
-	public String getRowFlag() {
-		return rowFlag;
-	}
-
-	public void setRowFlag(String rowFlag) {
-		this.rowFlag = rowFlag;
-	}
-
 	
-
 	@Override
 	public int hashCode() {
 		return new HashCodeBuilder()
 				.append(getId())
-				.append(getWorkReportId())
-				.append(getRowNo())
-				.append(getWorkTypeId())
-				.append(getDuration())
-				.append(getRowFlag())
+				.append(getProfileId())
+				.append(getUserId())
 				.toHashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj instanceof WorkReportDetail == false) {
+		if (obj instanceof ProfileMember == false) {
 			return false;
 		}
 		if (this == obj) {
 			return true;
 		}
-		final WorkReportDetail otherObject = (WorkReportDetail) obj;
+		final ProfileMember otherObject = (ProfileMember) obj;
 		return new EqualsBuilder()
 				.append(getId(), otherObject.getId())
 				.isEquals();
 	}
-
 }

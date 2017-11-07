@@ -36,6 +36,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 
 /**
  *
@@ -46,7 +47,7 @@ public class WorkReport {
 	private String workReportId;
 	private String workReportNo;
 	private Integer companyId;
-	private String userId;
+	private String operatorId;
 	private RevisionStatus revisionStatus;
 	private DateTime revisionTimestamp;
 	private Integer revisionSequence;
@@ -54,13 +55,12 @@ public class WorkReport {
 	private Integer contactId;
 	private String customerId;
 	private String customerStatId;
-	private DateTime fromDate;
-	private DateTime toDate;
+	private LocalDate fromDate;
+	private LocalDate toDate;
 	private String referenceNo;
-	private String causal;
 	private Integer causalId;
 	private String ddtNo;
-	private DateTime ddtDate;
+	private LocalDate ddtDate;
 	private String notes;
 	private String description;
 	private Boolean applySignature;
@@ -69,7 +69,7 @@ public class WorkReport {
 	private Integer businessTripId;
 	private Integer dayTrasfert;
 
-	private List<WorkReportDetail> details = new ArrayList();
+	private List<WorkReportRow> details = new ArrayList();
 	private List<WorkReportAttachment> attachments = new ArrayList();
 
 	public String getWorkReportId() {
@@ -96,12 +96,12 @@ public class WorkReport {
 		this.companyId = companyId;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getOperatorId() {
+		return operatorId;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setOperatorId(String operatorId) {
+		this.operatorId = operatorId;
 	}
 
 	public RevisionStatus getRevisionStatus() {
@@ -152,19 +152,19 @@ public class WorkReport {
 		this.customerStatId = customerStatId;
 	}
 
-	public DateTime getFromDate() {
+	public LocalDate getFromDate() {
 		return fromDate;
 	}
 
-	public void setFromDate(DateTime fromDate) {
+	public void setFromDate(LocalDate fromDate) {
 		this.fromDate = fromDate;
 	}
 
-	public DateTime getToDate() {
+	public LocalDate getToDate() {
 		return toDate;
 	}
 
-	public void setToDate(DateTime toDate) {
+	public void setToDate(LocalDate toDate) {
 		this.toDate = toDate;
 	}
 
@@ -174,14 +174,6 @@ public class WorkReport {
 
 	public void setReferenceNo(String referenceNo) {
 		this.referenceNo = referenceNo;
-	}
-
-	public String getCausal() {
-		return causal;
-	}
-
-	public void setCausal(String causal) {
-		this.causal = causal;
 	}
 
 	public Integer getCausalId() {
@@ -200,11 +192,11 @@ public class WorkReport {
 		this.ddtNo = ddtNo;
 	}
 
-	public DateTime getDdtDate() {
+	public LocalDate getDdtDate() {
 		return ddtDate;
 	}
 
-	public void setDdtDate(DateTime ddtDate) {
+	public void setDdtDate(LocalDate ddtDate) {
 		this.ddtDate = ddtDate;
 	}
 
@@ -272,11 +264,11 @@ public class WorkReport {
 		this.dayTrasfert = dayTrasfert;
 	}
 	
-	public List<WorkReportDetail> getDetails() {
+	public List<WorkReportRow> getDetails() {
 		return details;
 	}
 
-	public void setDetails(List<WorkReportDetail> details) {
+	public void setDetails(List<WorkReportRow> details) {
 		this.details = details;
 	}
 

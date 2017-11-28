@@ -59,6 +59,8 @@ public class Company {
 	public String footerColumns;
 	public String footerColumnLeft;
 	public String footerColumnRight;
+	
+	public boolean hasPicture;
 
 	private List<CompanyUserAssociation> associatedUsers = new ArrayList();
 
@@ -214,4 +216,11 @@ public class Company {
 		this.associatedUsers = associatedUsers;
 	}
 
+	public boolean getHasPicture() {
+		return hasPicture;
+	}
+
+	public void setHasPicture(boolean hasPicture) {
+		this.hasPicture = hasPicture;
+	}
 }

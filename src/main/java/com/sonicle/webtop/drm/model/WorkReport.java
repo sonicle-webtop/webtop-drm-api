@@ -33,6 +33,7 @@
 package com.sonicle.webtop.drm.model;
 
 import com.google.gson.annotations.SerializedName;
+import com.sonicle.webtop.core.sdk.UserProfileId;
 import java.util.ArrayList;
 import java.util.List;
 import org.joda.time.DateTime;
@@ -278,6 +279,10 @@ public class WorkReport {
 
 	public void setAttachments(List<WorkReportAttachment> attachments) {
 		this.attachments = attachments;
+	}
+	
+	public UserProfileId getOperatorProfileId(String domainId) {
+		return new UserProfileId(domainId, getOperatorId());
 	}
 	
 	public static enum RevisionStatus {

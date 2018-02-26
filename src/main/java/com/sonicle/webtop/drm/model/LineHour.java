@@ -39,11 +39,11 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
  *
  * @author stfnnvl
  */
-public class EmployeeHour {
+public class LineHour {
 	
 	public Integer id;
 	public String domainId;
-	public Integer employeeProfileId;
+	public Integer hourProfileId;
 	public Integer lineId;
 	public String e_1;
 	public String u_1;
@@ -83,12 +83,12 @@ public class EmployeeHour {
 		this.domainId = domainId;
 	}
 
-	public Integer getEmployeeProfileId() {
-		return employeeProfileId;
+	public Integer getHourProfileId() {
+		return hourProfileId;
 	}
 
-	public void setEmployeeProfileId(Integer employeeProfileId) {
-		this.employeeProfileId = employeeProfileId;
+	public void setHourProfileId(Integer hourProfileId) {
+		this.hourProfileId = hourProfileId;
 	}
 
 	public Integer getLineId() {
@@ -272,20 +272,20 @@ public class EmployeeHour {
 		return new HashCodeBuilder()
 				.append(getId())
 				.append(getDomainId())
-				.append(getEmployeeProfileId())
+				.append(getHourProfileId())
 				.append(getLineId())
 				.toHashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj instanceof EmployeeHour == false) {
+		if (obj instanceof LineHour == false) {
 			return false;
 		}
 		if (this == obj) {
 			return true;
 		}
-		final EmployeeHour otherObject = (EmployeeHour) obj;
+		final LineHour otherObject = (LineHour) obj;
 		return new EqualsBuilder()
 				.append(getId(), otherObject.getId())
 				.isEquals();

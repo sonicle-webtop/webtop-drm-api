@@ -39,16 +39,13 @@ import java.util.List;
  *
  * @author stfnnvl
  */
-public class EmployeeProfile {
+public class HourProfile {
 
 	public Integer id;
 	public String domainId;
-	public String userId;
-	public String number;
-	public String tolerance;
-	public Boolean extraordinary;
-	public Boolean onlyPresence;
-	public Integer hourProfileId;
+	public String description;
+
+	public List<LineHour> lineHours = new ArrayList();
 
 	public Integer getId() {
 		return id;
@@ -66,52 +63,20 @@ public class EmployeeProfile {
 		this.domainId = domainId;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public String getNumber() {
-		return number;
+	public List<LineHour> getLineHours() {
+		return lineHours;
 	}
 
-	public void setNumber(String number) {
-		this.number = number;
-	}
-
-	public String getTolerance() {
-		return tolerance;
-	}
-
-	public void setTolerance(String tolerance) {
-		this.tolerance = tolerance;
-	}
-
-	public Boolean getExtraordinary() {
-		return extraordinary;
-	}
-
-	public void setExtraordinary(Boolean extraordinary) {
-		this.extraordinary = extraordinary;
-	}
-
-	public Boolean getOnlyPresence() {
-		return onlyPresence;
-	}
-
-	public void setOnlyPresence(Boolean onlyPresence) {
-		this.onlyPresence = onlyPresence;
-	}
-
-	public Integer getHourProfileId() {
-		return hourProfileId;
-	}
-
-	public void setHourProfileId(Integer hourProfileId) {
-		this.hourProfileId = hourProfileId;
+	public void setLineHours(List<LineHour> lineHours) {
+		this.lineHours = lineHours;
 	}
 
 }

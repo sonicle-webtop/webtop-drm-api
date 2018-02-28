@@ -34,7 +34,7 @@ package com.sonicle.webtop.drm.model;
 
 /**
  *
- * @author stfnnvl
+ * @author lssndrvs
  */
 public class DrmGroupUserAssociation {
 

@@ -36,7 +36,7 @@ import org.joda.time.DateTime;
 
 /**
  *
- * @author stfnnvl
+ * @author lssndrvs
  */
 public class TimetableStamp {
 

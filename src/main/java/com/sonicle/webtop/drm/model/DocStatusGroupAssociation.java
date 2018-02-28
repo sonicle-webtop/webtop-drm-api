@@ -37,7 +37,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
  *
- * @author stfnnvl
+ * @author lssndrvs
  */
 public class DocStatusGroupAssociation {
 

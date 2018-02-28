@@ -36,7 +36,7 @@ import java.io.InputStream;
 
 /**
  *
- * @author stfnnvl
+ * @author lssndrvs
  */
 public class FileContent {
 	

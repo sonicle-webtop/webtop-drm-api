@@ -36,7 +36,7 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  *
- * @author stfnnvl
+ * @author lssndrvs
  */
 public enum GroupCategory {
 

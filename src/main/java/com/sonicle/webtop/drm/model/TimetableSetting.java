@@ -52,6 +52,9 @@ public class TimetableSetting {
 	private String minimumExtraordinary;
 	private Boolean breakAnomaly;
 	private Boolean readOnlyEvents;
+	private Boolean requestsPermitsNotRemunered;
+	private Boolean requestsPermitsMedicalVisits;
+	private Boolean requestsPermitsContractuals;
 
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -151,4 +154,27 @@ public class TimetableSetting {
 		this.holidayDates = holidayDates;
 	}
 
+	public Boolean getRequestsPermitsNotRemunered() {
+		return requestsPermitsNotRemunered;
+	}
+
+	public void setRequestsPermitsNotRemunered(Boolean requestsPermitsNotRemunered) {
+		this.requestsPermitsNotRemunered = requestsPermitsNotRemunered;
+	}
+
+	public Boolean getRequestsPermitsMedicalVisits() {
+		return requestsPermitsMedicalVisits;
+	}
+
+	public void setRequestsPermitsMedicalVisits(Boolean requestsPermitsMedicalVisits) {
+		this.requestsPermitsMedicalVisits = requestsPermitsMedicalVisits;
+	}
+
+	public Boolean getRequestsPermitsContractuals() {
+		return requestsPermitsContractuals;
+	}
+
+	public void setRequestsPermitsContractuals(Boolean requestsPermitsContractuals) {
+		this.requestsPermitsContractuals = requestsPermitsContractuals;
+	}
 }

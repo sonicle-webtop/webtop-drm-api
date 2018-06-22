@@ -50,6 +50,8 @@ public class TimetableSetting {
 	private String totalToleranceInMinutes;
 	private String rounding;
 	private String minimumExtraordinary;
+	private Boolean companyExit;
+	private Boolean manageStamp;
 	private Boolean breakAnomaly;
 	private Boolean readOnlyEvents;
 	private Boolean requestsPermitsNotRemunered;
@@ -128,6 +130,22 @@ public class TimetableSetting {
 
 	public void setMinimumExtraordinary(String minimumExtraordinary) {
 		this.minimumExtraordinary = minimumExtraordinary;
+	}
+
+	public Boolean getCompanyExit() {
+		return companyExit;
+	}
+
+	public void setCompanyExit(Boolean companyExit) {
+		this.companyExit = companyExit;
+	}
+
+	public Boolean getManageStamp() {
+		return manageStamp;
+	}
+
+	public void setManageStamp(Boolean manageStamp) {
+		this.manageStamp = manageStamp;
 	}
 
 	public Boolean getBreakAnomaly() {

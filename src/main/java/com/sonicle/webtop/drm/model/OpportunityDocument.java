@@ -42,7 +42,7 @@ import org.joda.time.DateTime;
  */
 public class OpportunityDocument {
 
-	private Integer id;
+	private String id;
 	private Integer opportunityId;
 	private DateTime revisionTimestamp;
 	private Integer revisionSequence;
@@ -50,11 +50,11 @@ public class OpportunityDocument {
 	private Integer size;
 	private String mediaType;
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

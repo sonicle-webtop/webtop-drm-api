@@ -47,6 +47,7 @@ public class OpportunityField {
 	private Boolean required;
 	private Integer order;
 	private String label;
+	private Boolean showOnGrid;
 
 	public String getDomainId() {
 		return domainId;
@@ -102,6 +103,14 @@ public class OpportunityField {
 
 	public void setLabel(String label) {
 		this.label = label;
+	}
+
+	public Boolean getShowOnGrid() {
+		return showOnGrid;
+	}
+
+	public void setShowOnGrid(Boolean showOnGrid) {
+		this.showOnGrid = showOnGrid;
 	}
 	
 	public static enum Tab {

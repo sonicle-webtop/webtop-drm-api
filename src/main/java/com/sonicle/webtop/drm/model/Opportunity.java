@@ -66,7 +66,7 @@ public class Opportunity {
 	private Integer statusId;
 	private String signedBy;
 	private Boolean signature;
-	private Boolean won;
+	private Boolean success;
 
 	private List<OpportunityInterlocutor> interlocutors = new ArrayList();
 	private List<OpportunityAction> actions = new ArrayList();
@@ -264,12 +264,12 @@ public class Opportunity {
 		this.signature = signature;
 	}
 
-	public Boolean getWon() {
-		return won;
+	public Boolean getSuccess() {
+		return success;
 	}
 
-	public void setWon(Boolean won) {
-		this.won = won;
+	public void setSuccess(Boolean success) {
+		this.success = success;
 	}
 
 	public List<OpportunityInterlocutor> getInterlocutors() {

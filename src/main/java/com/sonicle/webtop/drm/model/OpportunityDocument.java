@@ -47,7 +47,7 @@ public class OpportunityDocument {
 	private DateTime revisionTimestamp;
 	private Integer revisionSequence;
 	private String fileName;
-	private Integer size;
+	private Long size;
 	private String mediaType;
 
 	public String getId() {
@@ -90,11 +90,11 @@ public class OpportunityDocument {
 		this.fileName = fileName;
 	}
 
-	public Integer getSize() {
+	public Long getSize() {
 		return size;
 	}
 
-	public void setSize(Integer size) {
+	public void setSize(Long size) {
 		this.size = size;
 	}
 

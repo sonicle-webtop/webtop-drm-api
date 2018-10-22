@@ -45,7 +45,7 @@ public class WorkReportAttachment {
 	private String workReportAttachmentId;
 	private String workReportId;
 	private DateTime revisionTimestamp;
-	private Integer revisionSequence;
+	private Short revisionSequence;
 	private String fileName;
 	private Long size;
 	private String mediaType;
@@ -74,11 +74,11 @@ public class WorkReportAttachment {
 		this.revisionTimestamp = revisionTimestamp;
 	}
 
-	public Integer getRevisionSequence() {
+	public Short getRevisionSequence() {
 		return revisionSequence;
 	}
 
-	public void setRevisionSequence(Integer revisionSequence) {
+	public void setRevisionSequence(Short revisionSequence) {
 		this.revisionSequence = revisionSequence;
 	}
 

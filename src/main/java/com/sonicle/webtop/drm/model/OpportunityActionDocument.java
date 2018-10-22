@@ -43,9 +43,8 @@ import org.joda.time.DateTime;
 public class OpportunityActionDocument {
 
 	private String id;
-	private Integer opportunityActionId;
 	private DateTime revisionTimestamp;
-	private Integer revisionSequence;
+	private Short revisionSequence;
 	private String fileName;
 	private Long size;
 	private String mediaType;
@@ -58,14 +57,6 @@ public class OpportunityActionDocument {
 		this.id = id;
 	}
 
-	public Integer getOpportunityActionId() {
-		return opportunityActionId;
-	}
-
-	public void setOpportunityActionId(Integer opportunityActionId) {
-		this.opportunityActionId = opportunityActionId;
-	}
-
 	public DateTime getRevisionTimestamp() {
 		return revisionTimestamp;
 	}
@@ -74,11 +65,11 @@ public class OpportunityActionDocument {
 		this.revisionTimestamp = revisionTimestamp;
 	}
 
-	public Integer getRevisionSequence() {
+	public Short getRevisionSequence() {
 		return revisionSequence;
 	}
 
-	public void setRevisionSequence(Integer revisionSequence) {
+	public void setRevisionSequence(Short revisionSequence) {
 		this.revisionSequence = revisionSequence;
 	}
 
@@ -110,7 +101,6 @@ public class OpportunityActionDocument {
 	public int hashCode() {
 		return new HashCodeBuilder()
 				.append(getId())
-				.append(getOpportunityActionId())
 				.append(getFileName())
 				.append(getSize())
 				.append(getMediaType())

@@ -39,7 +39,7 @@ import java.io.InputStream;
 
 /**
  *
- * @author malbinola
+ * @author avasi
  */
 public class WorkReportAttachmentWithStream extends WorkReportAttachment {
 	private InputStream stream;

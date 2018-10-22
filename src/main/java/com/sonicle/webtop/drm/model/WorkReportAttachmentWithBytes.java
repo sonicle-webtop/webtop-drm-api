@@ -34,7 +34,7 @@ package com.sonicle.webtop.drm.model;
 
 /**
  *
- * @author malbinola
+ * @author avasi
  */
 public class WorkReportAttachmentWithBytes extends WorkReportAttachment {
 	protected byte[] bytes;

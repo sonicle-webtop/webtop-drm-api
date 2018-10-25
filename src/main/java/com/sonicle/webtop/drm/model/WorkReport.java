@@ -46,7 +46,8 @@ import org.joda.time.LocalDate;
 public class WorkReport {
 
 	private String workReportId;
-	private String workReportNo;
+	private Integer number;
+	private Integer year;
 	private Integer companyId;
 	private String operatorId;
 	private RevisionStatus revisionStatus;
@@ -81,12 +82,20 @@ public class WorkReport {
 		this.workReportId = workReportId;
 	}
 
-	public String getWorkReportNo() {
-		return workReportNo;
+	public Integer getNumber() {
+		return number;
 	}
 
-	public void setWorkReportNo(String workReportNo) {
-		this.workReportNo = workReportNo;
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+	
+	public Integer getYear() {
+		return year;
+	}
+
+	public void setYear(Integer year) {
+		this.year = year;
 	}
 
 	public Integer getCompanyId() {

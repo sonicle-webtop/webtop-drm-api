@@ -42,17 +42,18 @@ import org.joda.time.LocalDate;
  */
 public class OpportunityAction {
 
-	public Integer id;
-	public Integer opportunityId;
-	public String operatorId;
-	public Integer statusId;
-	public LocalDate date;
-	public String fromHour;
-	public String toHour;
-	public String description;
-	public String place;
-	public String subsequentActions;
-	public Integer activityId;
+	private Integer id;
+	private Integer opportunityId;
+	private String operatorId;
+	private Integer statusId;
+	private LocalDate date;
+	private String fromHour;
+	private String toHour;
+	private String description;
+	private String place;
+	private String subsequentActions;
+	private Integer activityId;
+	private Integer eventId;
 
 	private List<OpportunityActionInterlocutor> actionInterlocutors = new ArrayList();
 	private List<OpportunityActionDocument> actionDocuments = new ArrayList();
@@ -143,6 +144,14 @@ public class OpportunityAction {
 
 	public void setActivityId(Integer activityId) {
 		this.activityId = activityId;
+	}
+
+	public Integer getEventId() {
+		return eventId;
+	}
+
+	public void setEventId(Integer eventId) {
+		this.eventId = eventId;
 	}
 
 	public List<OpportunityActionInterlocutor> getActionInterlocutors() {

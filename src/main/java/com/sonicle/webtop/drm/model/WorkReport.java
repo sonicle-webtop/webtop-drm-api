@@ -70,6 +70,7 @@ public class WorkReport {
 	private Boolean freeSupport;
 	private Integer businessTripId;
 	private Integer dayTrasfert;
+	private Integer eventId;
 
 	private List<WorkReportRow> details = new ArrayList();
 	private List<WorkReportAttachment> attachments = new ArrayList();
@@ -272,6 +273,14 @@ public class WorkReport {
 
 	public void setDayTrasfert(Integer dayTrasfert) {
 		this.dayTrasfert = dayTrasfert;
+	}
+
+	public Integer getEventId() {
+		return eventId;
+	}
+
+	public void setEventId(Integer eventId) {
+		this.eventId = eventId;
 	}
 	
 	public List<WorkReportRow> getDetails() {

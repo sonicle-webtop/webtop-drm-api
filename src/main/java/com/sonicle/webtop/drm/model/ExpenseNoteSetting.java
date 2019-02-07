@@ -9,7 +9,7 @@
  * WARRANTY OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * ANY WARRANTY; without even the implied warrantyText of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
@@ -32,94 +32,69 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author lssndrvs
  */
-public class WorkReportRow {
+public class ExpenseNoteSetting {
 
-	private Integer id;
-	private String workReportId;
-	private Integer rowNo;
-	private Integer workTypeId;
-	private Integer duration;
-	private Boolean extra;
+	private Integer expenseNoteSettingId;
+	private String domainId;
+	private Boolean averageMaximum;
+	private String defaultCurrency;
+	private BigDecimal kmCost;
 	
-	public Integer getId() {
-		return id;
+	private List<CostType> costTypes = new ArrayList();
+
+	public Integer getExpenseNoteSettingId() {
+		return expenseNoteSettingId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setExpenseNoteSettingId(Integer expenseNoteSettingId) {
+		this.expenseNoteSettingId = expenseNoteSettingId;
 	}
 
-	public String getWorkReportId() {
-		return workReportId;
+	public String getDomainId() {
+		return domainId;
 	}
 
-	public void setWorkReportId(String workReportId) {
-		this.workReportId = workReportId;
+	public void setDomainId(String domainId) {
+		this.domainId = domainId;
 	}
 
-	public Integer getRowNo() {
-		return rowNo;
+	public Boolean getAverageMaximum() {
+		return averageMaximum;
 	}
 
-	public void setRowNo(Integer rowNo) {
-		this.rowNo = rowNo;
+	public void setAverageMaximum(Boolean averageMaximum) {
+		this.averageMaximum = averageMaximum;
 	}
 
-	public Integer getWorkTypeId() {
-		return workTypeId;
+	public String getDefaultCurrency() {
+		return defaultCurrency;
 	}
 
-	public void setWorkTypeId(Integer workTypeId) {
-		this.workTypeId = workTypeId;
+	public void setDefaultCurrency(String defaultCurrency) {
+		this.defaultCurrency = defaultCurrency;
 	}
 
-	public Integer getDuration() {
-		return duration;
+	public BigDecimal getKmCost() {
+		return kmCost;
 	}
 
-	public void setDuration(Integer duration) {
-		this.duration = duration;
+	public void setKmCost(BigDecimal kmCost) {
+		this.kmCost = kmCost;
 	}
 
-	public Boolean getExtra() {
-		return extra;
+	public List<CostType> getCostTypes() {
+		return costTypes;
 	}
 
-	public void setExtra(Boolean extra) {
-		this.extra = extra;
-	}	
-
-	@Override
-	public int hashCode() {
-		return new HashCodeBuilder()
-				.append(getId())
-				.append(getWorkReportId())
-				.append(getRowNo())
-				.append(getWorkTypeId())
-				.append(getDuration())
-				.append(getExtra())
-				.toHashCode();
+	public void setCostTypes(List<CostType> costTypes) {
+		this.costTypes = costTypes;
 	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof WorkReportRow == false) {
-			return false;
-		}
-		if (this == obj) {
-			return true;
-		}
-		final WorkReportRow otherObject = (WorkReportRow) obj;
-		return new EqualsBuilder()
-				.append(getId(), otherObject.getId())
-				.isEquals();
-	}
-
 }

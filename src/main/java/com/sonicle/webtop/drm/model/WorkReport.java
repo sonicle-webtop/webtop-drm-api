@@ -69,7 +69,7 @@ public class WorkReport {
 	private Boolean chargeTo;
 	private Boolean freeSupport;
 	private Integer businessTripId;
-	private Integer dayTrasfert;
+	private Integer businessTripDays;
 	private Integer eventId;
 
 	private List<WorkReportRow> details = new ArrayList();
@@ -267,12 +267,12 @@ public class WorkReport {
 		this.businessTripId = businessTripId;
 	}
 
-	public Integer getDayTrasfert() {
-		return dayTrasfert;
+	public Integer getBusinessTripDays() {
+		return businessTripDays;
 	}
 
-	public void setDayTrasfert(Integer dayTrasfert) {
-		this.dayTrasfert = dayTrasfert;
+	public void setBusinessTripDays(Integer businessTripDays) {
+		this.businessTripDays = businessTripDays;
 	}
 
 	public Integer getEventId() {

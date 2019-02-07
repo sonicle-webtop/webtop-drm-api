@@ -32,22 +32,25 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
+import java.math.BigDecimal;
 
 /**
  *
  * @author lssndrvs
  */
-public class WorkReportRow {
+public class CostType {
 
 	private Integer id;
-	private String workReportId;
-	private Integer rowNo;
-	private Integer workTypeId;
-	private Integer duration;
-	private Boolean extra;
-	
+	private String domainId;
+	private String description;
+	private BigDecimal maxImport;
+	private String costType;
+	private Boolean withOthers;
+	private Boolean perPerson;
+	private Boolean km;
+	private Boolean advancePayment;
+	private Boolean exchange;
+
 	public Integer getId() {
 		return id;
 	}
@@ -56,70 +59,76 @@ public class WorkReportRow {
 		this.id = id;
 	}
 
-	public String getWorkReportId() {
-		return workReportId;
+	public String getDomainId() {
+		return domainId;
 	}
 
-	public void setWorkReportId(String workReportId) {
-		this.workReportId = workReportId;
+	public void setDomainId(String domainId) {
+		this.domainId = domainId;
 	}
 
-	public Integer getRowNo() {
-		return rowNo;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setRowNo(Integer rowNo) {
-		this.rowNo = rowNo;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public Integer getWorkTypeId() {
-		return workTypeId;
+	public BigDecimal getMaxImport() {
+		return maxImport;
 	}
 
-	public void setWorkTypeId(Integer workTypeId) {
-		this.workTypeId = workTypeId;
+	public void setMaxImport(BigDecimal maxImport) {
+		this.maxImport = maxImport;
 	}
 
-	public Integer getDuration() {
-		return duration;
+	public String getCostType() {
+		return costType;
 	}
 
-	public void setDuration(Integer duration) {
-		this.duration = duration;
+	public void setCostType(String costType) {
+		this.costType = costType;
 	}
 
-	public Boolean getExtra() {
-		return extra;
+	public Boolean getWithOthers() {
+		return withOthers;
 	}
 
-	public void setExtra(Boolean extra) {
-		this.extra = extra;
-	}	
-
-	@Override
-	public int hashCode() {
-		return new HashCodeBuilder()
-				.append(getId())
-				.append(getWorkReportId())
-				.append(getRowNo())
-				.append(getWorkTypeId())
-				.append(getDuration())
-				.append(getExtra())
-				.toHashCode();
+	public void setWithOthers(Boolean withOthers) {
+		this.withOthers = withOthers;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof WorkReportRow == false) {
-			return false;
-		}
-		if (this == obj) {
-			return true;
-		}
-		final WorkReportRow otherObject = (WorkReportRow) obj;
-		return new EqualsBuilder()
-				.append(getId(), otherObject.getId())
-				.isEquals();
+	public Boolean getPerPerson() {
+		return perPerson;
+	}
+
+	public void setPerPerson(Boolean perPerson) {
+		this.perPerson = perPerson;
+	}
+
+	public Boolean getKm() {
+		return km;
+	}
+
+	public void setKm(Boolean km) {
+		this.km = km;
+	}
+
+	public Boolean getAdvancePayment() {
+		return advancePayment;
+	}
+
+	public void setAdvancePayment(Boolean advancePayment) {
+		this.advancePayment = advancePayment;
+	}
+
+	public Boolean getExchange() {
+		return exchange;
+	}
+
+	public void setExchange(Boolean exchange) {
+		this.exchange = exchange;
 	}
 
 }

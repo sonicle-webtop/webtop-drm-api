@@ -57,6 +57,7 @@ public class TimetableSetting {
 	private Boolean requestsPermitsNotRemunered;
 	private Boolean requestsPermitsMedicalVisits;
 	private Boolean requestsPermitsContractuals;
+	private Boolean medicalVisitsAutomaticallyApproved;
 
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -194,5 +195,13 @@ public class TimetableSetting {
 
 	public void setRequestsPermitsContractuals(Boolean requestsPermitsContractuals) {
 		this.requestsPermitsContractuals = requestsPermitsContractuals;
+	}
+
+	public Boolean getMedicalVisitsAutomaticallyApproved() {
+		return medicalVisitsAutomaticallyApproved;
+	}
+
+	public void setMedicalVisitsAutomaticallyApproved(Boolean medicalVisitsAutomaticallyApproved) {
+		this.medicalVisitsAutomaticallyApproved = medicalVisitsAutomaticallyApproved;
 	}
 }

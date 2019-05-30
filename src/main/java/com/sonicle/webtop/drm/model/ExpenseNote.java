@@ -32,6 +32,7 @@
  */
 package com.sonicle.webtop.drm.model;
 
+import com.sonicle.webtop.core.sdk.UserProfileId;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -151,5 +152,9 @@ public class ExpenseNote {
 
 	public void setDocuments(List<ExpenseNoteDocument> documents) {
 		this.documents = documents;
+	}
+	
+	public UserProfileId getOperatorProfileId(String domainId) {
+		return new UserProfileId(domainId, getOperatorId());
 	}
 }

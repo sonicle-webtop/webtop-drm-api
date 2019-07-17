@@ -41,6 +41,7 @@ public class OpportunityInterlocutor {
 	public Integer id;
 	public Integer opportunityId;
 	public Integer contactId;
+	public String desc;
 
 	public Integer getId() {
 		return id;
@@ -66,4 +67,11 @@ public class OpportunityInterlocutor {
 		this.contactId = contactId;
 	}
 
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 }

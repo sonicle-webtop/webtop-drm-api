@@ -58,6 +58,7 @@ public class TimetableReport {
 	private String hour;
 	private String detail;
 	private String note;
+	private String targetUserId;
 
 	public Integer getId() {
 		return id;
@@ -187,4 +188,11 @@ public class TimetableReport {
 		this.note = note;
 	}
 
+	public String getTargetUserId() {
+		return targetUserId;
+	}
+
+	public void setTargetUserId(String targetUserId) {
+		this.targetUserId = targetUserId;
+	}
 }

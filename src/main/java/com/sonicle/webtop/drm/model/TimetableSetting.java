@@ -58,6 +58,8 @@ public class TimetableSetting {
 	private Boolean requestsPermitsMedicalVisits;
 	private Boolean requestsPermitsContractuals;
 	private Boolean medicalVisitsAutomaticallyApproved;
+	private String calendarUserId;
+	private Integer defaultEventActivityId;
 
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -203,5 +205,21 @@ public class TimetableSetting {
 
 	public void setMedicalVisitsAutomaticallyApproved(Boolean medicalVisitsAutomaticallyApproved) {
 		this.medicalVisitsAutomaticallyApproved = medicalVisitsAutomaticallyApproved;
+	}
+
+	public String getCalendarUserId() {
+		return calendarUserId;
+	}
+
+	public void setCalendarUserId(String calendarUserId) {
+		this.calendarUserId = calendarUserId;
+	}
+
+	public Integer getDefaultEventActivityId() {
+		return defaultEventActivityId;
+	}
+
+	public void setDefaultEventActivityId(Integer defaultEventActivityId) {
+		this.defaultEventActivityId = defaultEventActivityId;
 	}
 }

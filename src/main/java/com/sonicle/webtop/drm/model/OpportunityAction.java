@@ -32,8 +32,10 @@
  */
 package com.sonicle.webtop.drm.model;
 
+import com.sonicle.webtop.core.sdk.UserProfileId;
 import java.util.ArrayList;
 import java.util.List;
+import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
 /**
@@ -46,9 +48,8 @@ public class OpportunityAction {
 	private Integer opportunityId;
 	private String operatorId;
 	private Integer statusId;
-	private LocalDate date;
-	private String fromHour;
-	private String toHour;
+	private DateTime startDate;
+	private DateTime endDate;
 	private String description;
 	private String place;
 	private String subsequentActions;
@@ -90,28 +91,20 @@ public class OpportunityAction {
 		this.statusId = statusId;
 	}
 
-	public LocalDate getDate() {
-		return date;
+	public DateTime getStartDate() {
+		return startDate;
 	}
 
-	public void setDate(LocalDate date) {
-		this.date = date;
+	public void setStartDate(DateTime startDate) {
+		this.startDate = startDate;
 	}
 
-	public String getFromHour() {
-		return fromHour;
+	public DateTime getEndDate() {
+		return endDate;
 	}
 
-	public void setFromHour(String fromHour) {
-		this.fromHour = fromHour;
-	}
-
-	public String getToHour() {
-		return toHour;
-	}
-
-	public void setToHour(String toHour) {
-		this.toHour = toHour;
+	public void setEndDate(DateTime endDate) {
+		this.endDate = endDate;
 	}
 
 	public String getDescription() {
@@ -170,4 +163,7 @@ public class OpportunityAction {
 		this.actionDocuments = actionDocuments;
 	}
 
+	public UserProfileId getOperatorProfileId(String domainId) {
+		return new UserProfileId(domainId, getOperatorId());
+	}
 }

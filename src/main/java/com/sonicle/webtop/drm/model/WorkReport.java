@@ -71,7 +71,9 @@ public class WorkReport {
 	private Integer businessTripId;
 	private Integer businessTripDays;
 	private Integer eventId;
-
+	private Integer timetableHours;
+	private String domainId;
+	
 	private List<WorkReportRow> details = new ArrayList();
 	private List<WorkReportAttachment> attachments = new ArrayList();
 
@@ -281,6 +283,22 @@ public class WorkReport {
 
 	public void setEventId(Integer eventId) {
 		this.eventId = eventId;
+	}
+	
+	public Integer getTimetableHours() {
+		return timetableHours;
+	}
+
+	public void setTimetableHours(Integer timetableHours) {
+		this.timetableHours = timetableHours;
+	}
+	
+	public String getDomainId() {
+		return domainId;
+	}
+
+	public void setDomainId(String domainId) {
+		this.domainId = domainId;
 	}
 	
 	public List<WorkReportRow> getDetails() {

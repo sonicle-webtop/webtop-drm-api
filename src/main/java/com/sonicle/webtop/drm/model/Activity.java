@@ -32,70 +32,26 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.joda.time.DateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
- * @author lssndrvs
+ * @author dnllr
  */
-public class TimetableStamp {
+public class Activity {
 
-	private Integer id;
-	private String domainId;
-	private String userId;
-	private String type;
-	private DateTime entrance;
-	private DateTime exit;
 	private Integer activityId;
-	private Integer eventId;
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
+	private String description;
+	private String externalId;
+	private String domainId;
+	private Boolean customer;
+	private Boolean timetable;
+	private Boolean jobs;
+	private Boolean opportunities;
+	private Boolean exportable;
 	
-	public String getDomainId() {
-		return domainId;
-	}
-
-	public void setDomainId(String domainId) {
-		this.domainId = domainId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public DateTime getEntrance() {
-		return entrance;
-	}
-
-	public void setEntrance(DateTime entrance) {
-		this.entrance = entrance;
-	}
-
-	public DateTime getExit() {
-		return exit;
-	}
-
-	public void setExit(DateTime exit) {
-		this.exit = exit;
-	}
+	private List<ActivityGroupAssociation> associatedProfiles = new ArrayList();
 
 	public Integer getActivityId() {
 		return activityId;
@@ -103,13 +59,77 @@ public class TimetableStamp {
 
 	public void setActivityId(Integer activityId) {
 		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
+	public String getExternalId() {
+		return externalId;
+	}
+
+	public void setExternalId(String externalId) {
+		this.externalId = externalId;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getDomainId() {
+		return domainId;
+	}
+
+	public void setDomainId(String domainId) {
+		this.domainId = domainId;
+	}
+	
+	public Boolean getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Boolean customer) {
+		this.customer = customer;
+	}
+
+	public Boolean getTimetable() {
+		return timetable;
+	}
+
+	public void setTimetable(Boolean timetable) {
+		this.timetable = timetable;
+	}
+	
+	public Boolean getJobs() {
+		return jobs;
+	}
+
+	public void setJobs(Boolean jobs) {
+		this.jobs = jobs;
+	}
+	
+	public Boolean getOpportunities() {
+		return opportunities;
+	}
+
+	public void setOpportunities(Boolean opportunities) {
+		this.opportunities = opportunities;
+	}
+	
+	public List<ActivityGroupAssociation> getAssociatedProfiles() {
+		return associatedProfiles;
+	}
+
+	public void setAssociatedProfiles(List<ActivityGroupAssociation> associatedProfiles) {
+		this.associatedProfiles = associatedProfiles;
+	}
+	
+	public Boolean getExportable() {
+		return exportable;
+	}
+
+	public void setExportable(Boolean exportable) {
+		this.exportable = exportable;
 	}	
 }

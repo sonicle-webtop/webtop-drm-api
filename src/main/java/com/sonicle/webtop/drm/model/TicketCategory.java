@@ -32,31 +32,30 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.joda.time.DateTime;
+import com.google.gson.annotations.SerializedName;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
  *
- * @author lssndrvs
+ * @author dnllr
  */
-public class TimetableStamp {
+public class TicketCategory {
 
-	private Integer id;
+	private Integer ticketCategoryId;
 	private String domainId;
-	private String userId;
-	private String type;
-	private DateTime entrance;
-	private DateTime exit;
-	private Integer activityId;
-	private Integer eventId;
+	private RevisionStatus revisionStatus;
+	private String externalId;
+	private String description;
 
-	public Integer getId() {
-		return id;
+	public Integer getTicketCategoryId() {
+		return ticketCategoryId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setTicketCategoryId(Integer ticketCategoryId) {
+		this.ticketCategoryId = ticketCategoryId;
 	}
-	
+
 	public String getDomainId() {
 		return domainId;
 	}
@@ -65,51 +64,57 @@ public class TimetableStamp {
 		this.domainId = domainId;
 	}
 
-	public String getUserId() {
-		return userId;
+	public RevisionStatus getRevisionStatus() {
+		return revisionStatus;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	
-	public String getType() {
-		return type;
+	public void setRevisionStatus(RevisionStatus revisionStatus) {
+		this.revisionStatus = revisionStatus;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public String getExternalId() {
+		return externalId;
 	}
 
-	public DateTime getEntrance() {
-		return entrance;
+	public void setExternalId(String externalId) {
+		this.externalId = externalId;
 	}
 
-	public void setEntrance(DateTime entrance) {
-		this.entrance = entrance;
+	public String getDescription() {
+		return description;
 	}
 
-	public DateTime getExit() {
-		return exit;
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public static enum RevisionStatus {
+		@SerializedName("M")
+		MODIFIED,
+		@SerializedName("D")
+		DELETED;
 	}
 
-	public void setExit(DateTime exit) {
-		this.exit = exit;
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder()
+				.append(getTicketCategoryId())
+				.append(getDomainId())
+				.append(getExternalId())
+				.append(getDescription())
+				.toHashCode();
 	}
 
-	public Integer getActivityId() {
-		return activityId;
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof TicketCategory == false) {
+			return false;
+		}
+		if (this == obj) {
+			return true;
+		}
+		final TicketCategory otherObject = (TicketCategory) obj;
+		return new EqualsBuilder()
+				.append(getTicketCategoryId(), otherObject.getTicketCategoryId())
+				.isEquals();
 	}
-
-	public void setActivityId(Integer activityId) {
-		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
-	}	
 }

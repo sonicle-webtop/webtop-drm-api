@@ -9,7 +9,7 @@
  * WARRANTY OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * ANY WARRANTY; without even the implied warrantyText of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
@@ -32,84 +32,22 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.joda.time.DateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
- * @author lssndrvs
+ * @author dnllr
  */
-public class TimetableStamp {
+public class TicketSetting {
 
-	private Integer id;
-	private String domainId;
-	private String userId;
-	private String type;
-	private DateTime entrance;
-	private DateTime exit;
-	private Integer activityId;
-	private Integer eventId;
+	private List<TicketCategory> categories = new ArrayList();	
 
-	public Integer getId() {
-		return id;
+	public List<TicketCategory> getCategories() {
+		return categories;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setTypes(List<TicketCategory> categories) {
+		this.categories = categories;
 	}
-	
-	public String getDomainId() {
-		return domainId;
-	}
-
-	public void setDomainId(String domainId) {
-		this.domainId = domainId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public DateTime getEntrance() {
-		return entrance;
-	}
-
-	public void setEntrance(DateTime entrance) {
-		this.entrance = entrance;
-	}
-
-	public DateTime getExit() {
-		return exit;
-	}
-
-	public void setExit(DateTime exit) {
-		this.exit = exit;
-	}
-
-	public Integer getActivityId() {
-		return activityId;
-	}
-
-	public void setActivityId(Integer activityId) {
-		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
-	}	
 }

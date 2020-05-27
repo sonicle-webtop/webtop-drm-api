@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Sonicle S.r.l.
+ * Copyright (C) 2018 Sonicle S.r.l.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by
@@ -28,88 +28,31 @@
  * version 3, these Appropriate Legal Notices must retain the display of the
  * Sonicle logo and Sonicle copyright notice. If the display of the logo is not
  * reasonably feasible for technical reasons, the Appropriate Legal Notices must
- * display the words "Copyright (C) 2017 Sonicle S.r.l.".
+ * display the words "Copyright (C) 2018 Sonicle S.r.l.".
  */
 package com.sonicle.webtop.drm.model;
 
-import org.joda.time.DateTime;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 /**
  *
- * @author lssndrvs
+ * @author dnllr
  */
-public class TimetableStamp {
-
-	private Integer id;
-	private String domainId;
-	private String userId;
-	private String type;
-	private DateTime entrance;
-	private DateTime exit;
-	private Integer activityId;
-	private Integer eventId;
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
+public class JobAttachmentWithStream extends JobAttachment {
+	private InputStream stream;
+	
+	public JobAttachmentWithStream(File file) throws FileNotFoundException {
+		this(new FileInputStream(file));
 	}
 	
-	public String getDomainId() {
-		return domainId;
-	}
-
-	public void setDomainId(String domainId) {
-		this.domainId = domainId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public JobAttachmentWithStream(InputStream stream) {
+		this.stream = stream;
 	}
 	
-	public String getType() {
-		return type;
+	public InputStream getStream() {
+		return stream;
 	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public DateTime getEntrance() {
-		return entrance;
-	}
-
-	public void setEntrance(DateTime entrance) {
-		this.entrance = entrance;
-	}
-
-	public DateTime getExit() {
-		return exit;
-	}
-
-	public void setExit(DateTime exit) {
-		this.exit = exit;
-	}
-
-	public Integer getActivityId() {
-		return activityId;
-	}
-
-	public void setActivityId(Integer activityId) {
-		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
-	}	
 }

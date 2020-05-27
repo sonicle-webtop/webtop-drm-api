@@ -32,69 +32,25 @@
  */
 package com.sonicle.webtop.drm.model;
 
-import org.joda.time.DateTime;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
  *
- * @author lssndrvs
+ * @author dnllr
  */
-public class TimetableStamp {
+public class ActivityGroupAssociation {
 
-	private Integer id;
-	private String domainId;
-	private String userId;
-	private String type;
-	private DateTime entrance;
-	private DateTime exit;
+	private Integer associationId;
 	private Integer activityId;
-	private Integer eventId;
+	private String groupId;
 
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	
-	public String getDomainId() {
-		return domainId;
+	public Integer getAssociationId() {
+		return associationId;
 	}
 
-	public void setDomainId(String domainId) {
-		this.domainId = domainId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public DateTime getEntrance() {
-		return entrance;
-	}
-
-	public void setEntrance(DateTime entrance) {
-		this.entrance = entrance;
-	}
-
-	public DateTime getExit() {
-		return exit;
-	}
-
-	public void setExit(DateTime exit) {
-		this.exit = exit;
+	public void setAssociationId(Integer associationId) {
+		this.associationId = associationId;
 	}
 
 	public Integer getActivityId() {
@@ -103,13 +59,37 @@ public class TimetableStamp {
 
 	public void setActivityId(Integer activityId) {
 		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
-	}	
+	public String getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
+	}
+
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder()
+				.append(getAssociationId())
+				.append(getActivityId())
+				.append(getGroupId())
+				.toHashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof ActivityGroupAssociation == false) {
+			return false;
+		}
+		if (this == obj) {
+			return true;
+		}
+		final ActivityGroupAssociation otherObject = (ActivityGroupAssociation) obj;
+		return new EqualsBuilder()
+				.append(getAssociationId(), otherObject.getAssociationId())
+				.isEquals();
+	}
+
 }

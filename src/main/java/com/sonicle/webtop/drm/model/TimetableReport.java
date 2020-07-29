@@ -59,7 +59,10 @@ public class TimetableReport {
 	private String detail;
 	private String note;
 	private String targetUserId;
-
+	private String workReportHours;
+	private String jobHours;
+	private String sickness;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -194,5 +197,29 @@ public class TimetableReport {
 
 	public void setTargetUserId(String targetUserId) {
 		this.targetUserId = targetUserId;
+	}
+	
+	public String getWorkReportHours() {
+		return workReportHours;
+	}
+
+	public void setWorkReportHours(String workReportHours) {
+		this.workReportHours = workReportHours;
+	}
+	
+	public String getJobHours() {
+		return jobHours;
+	}
+
+	public void setJobHours(String jobHours) {
+		this.jobHours = jobHours;
+	}
+	
+	public String getSickness() {
+		return sickness;
+	}
+
+	public void setSickness(String sickness) {
+		this.sickness = sickness;
 	}
 }

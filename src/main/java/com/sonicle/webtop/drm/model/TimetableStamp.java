@@ -46,8 +46,6 @@ public class TimetableStamp {
 	private String type;
 	private DateTime entrance;
 	private DateTime exit;
-	private Integer activityId;
-	private Integer eventId;
 
 	public Integer getId() {
 		return id;
@@ -97,19 +95,4 @@ public class TimetableStamp {
 		this.exit = exit;
 	}
 
-	public Integer getActivityId() {
-		return activityId;
-	}
-
-	public void setActivityId(Integer activityId) {
-		this.activityId = activityId;
-	}	
-	
-	public Integer getEventId() {
-		return eventId;
-	}
-
-	public void setEventId(Integer eventId) {
-		this.eventId = eventId;
-	}	
 }

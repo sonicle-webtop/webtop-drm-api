@@ -40,7 +40,6 @@ import java.util.List;
  * @author lssndrvs
  */
 public class EmployeeProfile {
-
 	public Integer id;
 	public String domainId;
 	public String userId;

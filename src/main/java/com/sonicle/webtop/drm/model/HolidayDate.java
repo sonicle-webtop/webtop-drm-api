@@ -40,11 +40,19 @@ import org.joda.time.LocalDate;
  * @author lssndrvs
  */
 public class HolidayDate {
-
+    private Integer holidayDateId; 
 	private String domainId;
 	private LocalDate date;
 	private String description;
+    
+	public Integer getHolidayDateId() {
+		return holidayDateId;
+	}
 
+	public void setHolidayDateId(Integer holidayDateId) {
+		this.holidayDateId = holidayDateId;
+	}
+    
 	public String getDomainId() {
 		return domainId;
 	}
@@ -52,7 +60,6 @@ public class HolidayDate {
 	public void setDomainId(String domainId) {
 		this.domainId = domainId;
 	}
-
 
 	public String getDescription() {
 		return description;

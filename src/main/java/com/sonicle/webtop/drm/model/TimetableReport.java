@@ -62,6 +62,8 @@ public class TimetableReport {
 	private String workReportHours;
 	private String jobHours;
 	private String sickness;
+	private String other;
+	private String causalId;
 	
 	public Integer getId() {
 		return id;
@@ -221,5 +223,21 @@ public class TimetableReport {
 
 	public void setSickness(String sickness) {
 		this.sickness = sickness;
+	}
+
+	public String getOther() {
+		return other;
+	}
+
+	public void setOther(String other) {
+		this.other = other;
+	}
+
+	public String getCausalId() {
+		return causalId;
+	}
+
+	public void setCausalId(String causalId) {
+		this.causalId = causalId;
 	}
 }

@@ -62,6 +62,11 @@ public class TimetableSetting {
 	private Integer defaultEventActivityId;
 	private Boolean requestsSickness;
 	private Boolean sicknessAutomaticallyApproved;
+	private String defaultCausalWorkingHours;
+	private String defaultCausalOvertime;
+	private String defaultCausalPermits;
+	private String defaultCausalHolidays;
+	private String defaultCausalSickness;
 	
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -240,5 +245,44 @@ public class TimetableSetting {
 	public void setSicknessAutomaticallyApproved(Boolean sicknessAutomaticallyApproved) {
 		this.sicknessAutomaticallyApproved = sicknessAutomaticallyApproved;
 	}
-	
+
+	public String getDefaultCausalWorkingHours() {
+		return defaultCausalWorkingHours;
+	}
+
+	public void setDefaultCausalWorkingHours(String defaultCausalWorkingHours) {
+		this.defaultCausalWorkingHours = defaultCausalWorkingHours;
+	}
+
+	public String getDefaultCausalOvertime() {
+		return defaultCausalOvertime;
+	}
+
+	public void setDefaultCausalOvertime(String defaultCausalOvertime) {
+		this.defaultCausalOvertime = defaultCausalOvertime;
+	}
+
+	public String getDefaultCausalPermits() {
+		return defaultCausalPermits;
+	}
+
+	public void setDefaultCausalPermits(String defaultCausalPermits) {
+		this.defaultCausalPermits = defaultCausalPermits;
+	}
+
+	public String getDefaultCausalHolidays() {
+		return defaultCausalHolidays;
+	}
+
+	public void setDefaultCausalHolidays(String defaultCausalHolidays) {
+		this.defaultCausalHolidays = defaultCausalHolidays;
+	}
+
+	public String getDefaultCausalSickness() {
+		return defaultCausalSickness;
+	}
+
+	public void setDefaultCausalSickness(String defaultCausalSickness) {
+		this.defaultCausalSickness = defaultCausalSickness;
+	}
 }

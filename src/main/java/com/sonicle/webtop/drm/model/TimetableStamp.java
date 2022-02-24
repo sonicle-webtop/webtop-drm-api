@@ -46,6 +46,7 @@ public class TimetableStamp {
 	private String type;
 	private DateTime entrance;
 	private DateTime exit;
+	private String location;
 
 	public Integer getId() {
 		return id;
@@ -93,6 +94,14 @@ public class TimetableStamp {
 
 	public void setExit(DateTime exit) {
 		this.exit = exit;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 }

@@ -67,6 +67,7 @@ public class TimetableSetting {
 	private String defaultCausalPermits;
 	private String defaultCausalHolidays;
 	private String defaultCausalSickness;
+	private String defaultCausalMedicalVisit;
 	
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -284,5 +285,13 @@ public class TimetableSetting {
 
 	public void setDefaultCausalSickness(String defaultCausalSickness) {
 		this.defaultCausalSickness = defaultCausalSickness;
+	}
+
+	public String getDefaultCausalMedicalVisit() {
+		return defaultCausalMedicalVisit;
+	}
+
+	public void setDefaultCausalMedicalVisit(String defaultCausalMedicalVisit) {
+		this.defaultCausalMedicalVisit = defaultCausalMedicalVisit;
 	}
 }

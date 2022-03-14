@@ -40,6 +40,7 @@ public class Causal {
 	private String id;
 	private String description;
 	private String externalCode;
+	private Integer sign;
 
 	public String getId() {
 		return id;
@@ -65,4 +66,11 @@ public class Causal {
 		this.externalCode = externalCode;
 	}
 
+	public Integer getSign() {
+		return sign;
+	}
+
+	public void setSign(Integer sign) {
+		this.sign = sign;
+	}
 }

@@ -13,172 +13,96 @@ public class Causals implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private java.lang.Integer causalId;
-    private java.lang.String  domainId;
-    private java.lang.String  userId;
-    private java.lang.String  masterDataId;
-    private java.lang.String  revisionStatus;
-    private java.lang.String  description;
-    private java.lang.Boolean readOnly;
-    private java.lang.String  externalId;
+    private java.lang.String     id;
+    private java.lang.String     description;
+    private java.lang.String     externalCode;
+    private java.math.BigDecimal sign;
 
     public Causals() {}
 
     public Causals(Causals value) {
-        this.causalId = value.causalId;
-        this.domainId = value.domainId;
-        this.userId = value.userId;
-        this.masterDataId = value.masterDataId;
-        this.revisionStatus = value.revisionStatus;
+        this.id = value.id;
         this.description = value.description;
-        this.readOnly = value.readOnly;
-        this.externalId = value.externalId;
+        this.externalCode = value.externalCode;
+        this.sign = value.sign;
     }
 
     public Causals(
-        java.lang.Integer causalId,
-        java.lang.String  domainId,
-        java.lang.String  userId,
-        java.lang.String  masterDataId,
-        java.lang.String  revisionStatus,
-        java.lang.String  description,
-        java.lang.Boolean readOnly,
-        java.lang.String  externalId
+        java.lang.String     id,
+        java.lang.String     description,
+        java.lang.String     externalCode,
+        java.math.BigDecimal sign
     ) {
-        this.causalId = causalId;
-        this.domainId = domainId;
-        this.userId = userId;
-        this.masterDataId = masterDataId;
-        this.revisionStatus = revisionStatus;
+        this.id = id;
         this.description = description;
-        this.readOnly = readOnly;
-        this.externalId = externalId;
+        this.externalCode = externalCode;
+        this.sign = sign;
     }
 
     /**
-     * Getter for <code>core.causals.causal_id</code>.
+     * Getter for <code>drm.causals.id</code>.
      */
-    public java.lang.Integer getCausalId() {
-        return this.causalId;
+    public java.lang.String getId() {
+        return this.id;
     }
 
     /**
-     * Setter for <code>core.causals.causal_id</code>.
+     * Setter for <code>drm.causals.id</code>.
      */
-    public void setCausalId(java.lang.Integer causalId) {
-        this.causalId = causalId;
+    public void setId(java.lang.String id) {
+        this.id = id;
     }
 
     /**
-     * Getter for <code>core.causals.domain_id</code>.
-     */
-    public java.lang.String getDomainId() {
-        return this.domainId;
-    }
-
-    /**
-     * Setter for <code>core.causals.domain_id</code>.
-     */
-    public void setDomainId(java.lang.String domainId) {
-        this.domainId = domainId;
-    }
-
-    /**
-     * Getter for <code>core.causals.user_id</code>.
-     */
-    public java.lang.String getUserId() {
-        return this.userId;
-    }
-
-    /**
-     * Setter for <code>core.causals.user_id</code>.
-     */
-    public void setUserId(java.lang.String userId) {
-        this.userId = userId;
-    }
-
-    /**
-     * Getter for <code>core.causals.master_data_id</code>.
-     */
-    public java.lang.String getMasterDataId() {
-        return this.masterDataId;
-    }
-
-    /**
-     * Setter for <code>core.causals.master_data_id</code>.
-     */
-    public void setMasterDataId(java.lang.String masterDataId) {
-        this.masterDataId = masterDataId;
-    }
-
-    /**
-     * Getter for <code>core.causals.revision_status</code>.
-     */
-    public java.lang.String getRevisionStatus() {
-        return this.revisionStatus;
-    }
-
-    /**
-     * Setter for <code>core.causals.revision_status</code>.
-     */
-    public void setRevisionStatus(java.lang.String revisionStatus) {
-        this.revisionStatus = revisionStatus;
-    }
-
-    /**
-     * Getter for <code>core.causals.description</code>.
+     * Getter for <code>drm.causals.description</code>.
      */
     public java.lang.String getDescription() {
         return this.description;
     }
 
     /**
-     * Setter for <code>core.causals.description</code>.
+     * Setter for <code>drm.causals.description</code>.
      */
     public void setDescription(java.lang.String description) {
         this.description = description;
     }
 
     /**
-     * Getter for <code>core.causals.read_only</code>.
+     * Getter for <code>drm.causals.external_code</code>.
      */
-    public java.lang.Boolean getReadOnly() {
-        return this.readOnly;
+    public java.lang.String getExternalCode() {
+        return this.externalCode;
     }
 
     /**
-     * Setter for <code>core.causals.read_only</code>.
+     * Setter for <code>drm.causals.external_code</code>.
      */
-    public void setReadOnly(java.lang.Boolean readOnly) {
-        this.readOnly = readOnly;
+    public void setExternalCode(java.lang.String externalCode) {
+        this.externalCode = externalCode;
     }
 
     /**
-     * Getter for <code>core.causals.external_id</code>.
+     * Getter for <code>drm.causals.sign</code>.
      */
-    public java.lang.String getExternalId() {
-        return this.externalId;
+    public java.math.BigDecimal getSign() {
+        return this.sign;
     }
 
     /**
-     * Setter for <code>core.causals.external_id</code>.
+     * Setter for <code>drm.causals.sign</code>.
      */
-    public void setExternalId(java.lang.String externalId) {
-        this.externalId = externalId;
+    public void setSign(java.math.BigDecimal sign) {
+        this.sign = sign;
     }
 
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("Causals (");
 
-        sb.append(causalId);
-        sb.append(", ").append(domainId);
-        sb.append(", ").append(userId);
-        sb.append(", ").append(masterDataId);
-        sb.append(", ").append(revisionStatus);
+        sb.append(id);
         sb.append(", ").append(description);
-        sb.append(", ").append(readOnly);
-        sb.append(", ").append(externalId);
+        sb.append(", ").append(externalCode);
+        sb.append(", ").append(sign);
 
         sb.append(")");
         return sb.toString();

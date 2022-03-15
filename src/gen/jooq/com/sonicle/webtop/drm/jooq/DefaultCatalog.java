@@ -19,9 +19,9 @@ public class DefaultCatalog extends org.jooq.impl.CatalogImpl {
     public static final DefaultCatalog DEFAULT_CATALOG = new DefaultCatalog();
 
     /**
-     * The schema <code>core</code>.
+     * The schema <code>drm</code>.
      */
-    public final com.sonicle.webtop.drm.jooq.Core CORE = com.sonicle.webtop.drm.jooq.Core.CORE;
+    public final com.sonicle.webtop.drm.jooq.Drm DRM = com.sonicle.webtop.drm.jooq.Drm.DRM;
 
     /**
      * No further instances allowed
@@ -33,6 +33,6 @@ public class DefaultCatalog extends org.jooq.impl.CatalogImpl {
     @java.lang.Override
     public final java.util.List<org.jooq.Schema> getSchemas() {
         return java.util.Arrays.<org.jooq.Schema>asList(
-            com.sonicle.webtop.drm.jooq.Core.CORE);
+            com.sonicle.webtop.drm.jooq.Drm.DRM);
     }
 }

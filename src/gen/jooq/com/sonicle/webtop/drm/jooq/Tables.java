@@ -6,333 +6,243 @@ package com.sonicle.webtop.drm.jooq;
 
 
 /**
- * Convenience access to all tables in drm.
+ * Convenience access to all tables in core.
  */
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Tables {
 
     /**
-     * The table <code>drm.activities</code>.
+     * The table <code>core.____customers</code>.
+     */
+    public static final com.sonicle.webtop.drm.jooq.tables.____Customers ____CUSTOMERS = com.sonicle.webtop.drm.jooq.tables.____Customers.____CUSTOMERS;
+
+    /**
+     * The table <code>core.activities</code>.
      */
     public static final com.sonicle.webtop.drm.jooq.tables.Activities ACTIVITIES = com.sonicle.webtop.drm.jooq.tables.Activities.ACTIVITIES;
 
     /**
-     * The table <code>drm.activities_groups</code>.
+     * The table <code>core.audit_known_devices</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ActivitiesGroups ACTIVITIES_GROUPS = com.sonicle.webtop.drm.jooq.tables.ActivitiesGroups.ACTIVITIES_GROUPS;
+    public static final com.sonicle.webtop.drm.jooq.tables.AuditKnownDevices AUDIT_KNOWN_DEVICES = com.sonicle.webtop.drm.jooq.tables.AuditKnownDevices.AUDIT_KNOWN_DEVICES;
 
     /**
-     * The table <code>drm.business_trips</code>.
+     * The table <code>core.audit_log</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.BusinessTrips BUSINESS_TRIPS = com.sonicle.webtop.drm.jooq.tables.BusinessTrips.BUSINESS_TRIPS;
+    public static final com.sonicle.webtop.drm.jooq.tables.AuditLog AUDIT_LOG = com.sonicle.webtop.drm.jooq.tables.AuditLog.AUDIT_LOG;
 
     /**
-     * The table <code>drm.causals</code>.
+     * The table <code>core.audit_log_bck</code>.
+     */
+    public static final com.sonicle.webtop.drm.jooq.tables.AuditLogBck AUDIT_LOG_BCK = com.sonicle.webtop.drm.jooq.tables.AuditLogBck.AUDIT_LOG_BCK;
+
+    /**
+     * The table <code>core.autosave</code>.
+     */
+    public static final com.sonicle.webtop.drm.jooq.tables.Autosave AUTOSAVE = com.sonicle.webtop.drm.jooq.tables.Autosave.AUTOSAVE;
+
+    /**
+     * The table <code>core.causals</code>.
      */
     public static final com.sonicle.webtop.drm.jooq.tables.Causals CAUSALS = com.sonicle.webtop.drm.jooq.tables.Causals.CAUSALS;
 
     /**
-     * The table <code>drm.companies</code>.
+     * The table <code>core.custom_fields</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Companies COMPANIES = com.sonicle.webtop.drm.jooq.tables.Companies.COMPANIES;
+    public static final com.sonicle.webtop.drm.jooq.tables.CustomFields CUSTOM_FIELDS = com.sonicle.webtop.drm.jooq.tables.CustomFields.CUSTOM_FIELDS;
 
     /**
-     * The table <code>drm.companies_pictures</code>.
+     * The table <code>core.custom_panels</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.CompaniesPictures COMPANIES_PICTURES = com.sonicle.webtop.drm.jooq.tables.CompaniesPictures.COMPANIES_PICTURES;
+    public static final com.sonicle.webtop.drm.jooq.tables.CustomPanels CUSTOM_PANELS = com.sonicle.webtop.drm.jooq.tables.CustomPanels.CUSTOM_PANELS;
 
     /**
-     * The table <code>drm.companies_users</code>.
+     * The table <code>core.custom_panels_fields</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.CompaniesUsers COMPANIES_USERS = com.sonicle.webtop.drm.jooq.tables.CompaniesUsers.COMPANIES_USERS;
+    public static final com.sonicle.webtop.drm.jooq.tables.CustomPanelsFields CUSTOM_PANELS_FIELDS = com.sonicle.webtop.drm.jooq.tables.CustomPanelsFields.CUSTOM_PANELS_FIELDS;
 
     /**
-     * The table <code>drm.cost_types</code>.
+     * The table <code>core.custom_panels_tags</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.CostTypes COST_TYPES = com.sonicle.webtop.drm.jooq.tables.CostTypes.COST_TYPES;
+    public static final com.sonicle.webtop.drm.jooq.tables.CustomPanelsTags CUSTOM_PANELS_TAGS = com.sonicle.webtop.drm.jooq.tables.CustomPanelsTags.CUSTOM_PANELS_TAGS;
 
     /**
-     * The table <code>drm.doc_statuses</code>.
+     * The table <code>core.customers_deprecated</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.DocStatuses DOC_STATUSES = com.sonicle.webtop.drm.jooq.tables.DocStatuses.DOC_STATUSES;
+    public static final com.sonicle.webtop.drm.jooq.tables.CustomersDeprecated CUSTOMERS_DEPRECATED = com.sonicle.webtop.drm.jooq.tables.CustomersDeprecated.CUSTOMERS_DEPRECATED;
 
     /**
-     * The table <code>drm.doc_statuses_groups</code>.
+     * The table <code>core.data_sources</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.DocStatusesGroups DOC_STATUSES_GROUPS = com.sonicle.webtop.drm.jooq.tables.DocStatusesGroups.DOC_STATUSES_GROUPS;
+    public static final com.sonicle.webtop.drm.jooq.tables.DataSources DATA_SOURCES = com.sonicle.webtop.drm.jooq.tables.DataSources.DATA_SOURCES;
 
     /**
-     * The table <code>drm.employee_profiles</code>.
+     * The table <code>core.domain_settings</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.EmployeeProfiles EMPLOYEE_PROFILES = com.sonicle.webtop.drm.jooq.tables.EmployeeProfiles.EMPLOYEE_PROFILES;
+    public static final com.sonicle.webtop.drm.jooq.tables.DomainSettings DOMAIN_SETTINGS = com.sonicle.webtop.drm.jooq.tables.DomainSettings.DOMAIN_SETTINGS;
 
     /**
-     * The table <code>drm.enabled_programs</code>.
+     * The table <code>core.domains</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.EnabledPrograms ENABLED_PROGRAMS = com.sonicle.webtop.drm.jooq.tables.EnabledPrograms.ENABLED_PROGRAMS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Domains DOMAINS = com.sonicle.webtop.drm.jooq.tables.Domains.DOMAINS;
 
     /**
-     * The table <code>drm.expense_note</code>.
+     * The table <code>core.domains_aliases</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNote EXPENSE_NOTE = com.sonicle.webtop.drm.jooq.tables.ExpenseNote.EXPENSE_NOTE;
+    public static final com.sonicle.webtop.drm.jooq.tables.DomainsAliases DOMAINS_ALIASES = com.sonicle.webtop.drm.jooq.tables.DomainsAliases.DOMAINS_ALIASES;
 
     /**
-     * The table <code>drm.expense_note_detail</code>.
+     * The table <code>core.file_types</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetail EXPENSE_NOTE_DETAIL = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetail.EXPENSE_NOTE_DETAIL;
+    public static final com.sonicle.webtop.drm.jooq.tables.FileTypes FILE_TYPES = com.sonicle.webtop.drm.jooq.tables.FileTypes.FILE_TYPES;
 
     /**
-     * The table <code>drm.expense_note_detail_documents</code>.
+     * The table <code>core.im_chats</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetailDocuments EXPENSE_NOTE_DETAIL_DOCUMENTS = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetailDocuments.EXPENSE_NOTE_DETAIL_DOCUMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.ImChats IM_CHATS = com.sonicle.webtop.drm.jooq.tables.ImChats.IM_CHATS;
 
     /**
-     * The table <code>drm.expense_note_detail_documents_data</code>.
+     * The table <code>core.im_messages</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetailDocumentsData EXPENSE_NOTE_DETAIL_DOCUMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDetailDocumentsData.EXPENSE_NOTE_DETAIL_DOCUMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.ImMessages IM_MESSAGES = com.sonicle.webtop.drm.jooq.tables.ImMessages.IM_MESSAGES;
 
     /**
-     * The table <code>drm.expense_note_documents</code>.
+     * The table <code>core.ip_geo_cache</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDocuments EXPENSE_NOTE_DOCUMENTS = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDocuments.EXPENSE_NOTE_DOCUMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.IpGeoCache IP_GEO_CACHE = com.sonicle.webtop.drm.jooq.tables.IpGeoCache.IP_GEO_CACHE;
 
     /**
-     * The table <code>drm.expense_note_documents_data</code>.
+     * The table <code>core.languages</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDocumentsData EXPENSE_NOTE_DOCUMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteDocumentsData.EXPENSE_NOTE_DOCUMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.Languages LANGUAGES = com.sonicle.webtop.drm.jooq.tables.Languages.LANGUAGES;
 
     /**
-     * The table <code>drm.expense_note_settings</code>.
+     * The table <code>core.licenses</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.ExpenseNoteSettings EXPENSE_NOTE_SETTINGS = com.sonicle.webtop.drm.jooq.tables.ExpenseNoteSettings.EXPENSE_NOTE_SETTINGS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Licenses LICENSES = com.sonicle.webtop.drm.jooq.tables.Licenses.LICENSES;
 
     /**
-     * The table <code>drm.folders</code>.
+     * The table <code>core.licenses_leases</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Folders FOLDERS = com.sonicle.webtop.drm.jooq.tables.Folders.FOLDERS;
+    public static final com.sonicle.webtop.drm.jooq.tables.LicensesLeases LICENSES_LEASES = com.sonicle.webtop.drm.jooq.tables.LicensesLeases.LICENSES_LEASES;
 
     /**
-     * The table <code>drm.folders_groups</code>.
+     * The table <code>core.local_vault</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.FoldersGroups FOLDERS_GROUPS = com.sonicle.webtop.drm.jooq.tables.FoldersGroups.FOLDERS_GROUPS;
+    public static final com.sonicle.webtop.drm.jooq.tables.LocalVault LOCAL_VAULT = com.sonicle.webtop.drm.jooq.tables.LocalVault.LOCAL_VAULT;
 
     /**
-     * The table <code>drm.groups</code>.
+     * The table <code>core.mail_aliases</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Groups GROUPS = com.sonicle.webtop.drm.jooq.tables.Groups.GROUPS;
+    public static final com.sonicle.webtop.drm.jooq.tables.MailAliases MAIL_ALIASES = com.sonicle.webtop.drm.jooq.tables.MailAliases.MAIL_ALIASES;
 
     /**
-     * The table <code>drm.groups_users</code>.
+     * The table <code>core.mail_aliases_destinations</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.GroupsUsers GROUPS_USERS = com.sonicle.webtop.drm.jooq.tables.GroupsUsers.GROUPS_USERS;
+    public static final com.sonicle.webtop.drm.jooq.tables.MailAliasesDestinations MAIL_ALIASES_DESTINATIONS = com.sonicle.webtop.drm.jooq.tables.MailAliasesDestinations.MAIL_ALIASES_DESTINATIONS;
 
     /**
-     * The table <code>drm.holiday_date</code>.
+     * The table <code>core.master_data</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.HolidayDate HOLIDAY_DATE = com.sonicle.webtop.drm.jooq.tables.HolidayDate.HOLIDAY_DATE;
+    public static final com.sonicle.webtop.drm.jooq.tables.MasterData MASTER_DATA = com.sonicle.webtop.drm.jooq.tables.MasterData.MASTER_DATA;
 
     /**
-     * The table <code>drm.hour_profiles</code>.
+     * The table <code>core.media_types</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.HourProfiles HOUR_PROFILES = com.sonicle.webtop.drm.jooq.tables.HourProfiles.HOUR_PROFILES;
+    public static final com.sonicle.webtop.drm.jooq.tables.MediaTypes MEDIA_TYPES = com.sonicle.webtop.drm.jooq.tables.MediaTypes.MEDIA_TYPES;
 
     /**
-     * The table <code>drm.job_attachments</code>.
+     * The table <code>core.messages_queue</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.JobAttachments JOB_ATTACHMENTS = com.sonicle.webtop.drm.jooq.tables.JobAttachments.JOB_ATTACHMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.MessagesQueue MESSAGES_QUEUE = com.sonicle.webtop.drm.jooq.tables.MessagesQueue.MESSAGES_QUEUE;
 
     /**
-     * The table <code>drm.job_attachments_data</code>.
+     * The table <code>core.roles</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.JobAttachmentsData JOB_ATTACHMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.JobAttachmentsData.JOB_ATTACHMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.Roles ROLES = com.sonicle.webtop.drm.jooq.tables.Roles.ROLES;
 
     /**
-     * The table <code>drm.jobs</code>.
+     * The table <code>core.roles_associations</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Jobs JOBS = com.sonicle.webtop.drm.jooq.tables.Jobs.JOBS;
+    public static final com.sonicle.webtop.drm.jooq.tables.RolesAssociations ROLES_ASSOCIATIONS = com.sonicle.webtop.drm.jooq.tables.RolesAssociations.ROLES_ASSOCIATIONS;
 
     /**
-     * The table <code>drm.leave_request_documents</code>.
+     * The table <code>core.roles_permissions</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LeaveRequestDocuments LEAVE_REQUEST_DOCUMENTS = com.sonicle.webtop.drm.jooq.tables.LeaveRequestDocuments.LEAVE_REQUEST_DOCUMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.RolesPermissions ROLES_PERMISSIONS = com.sonicle.webtop.drm.jooq.tables.RolesPermissions.ROLES_PERMISSIONS;
 
     /**
-     * The table <code>drm.leave_request_documents_data</code>.
+     * The table <code>core.servicestore_entries</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LeaveRequestDocumentsData LEAVE_REQUEST_DOCUMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.LeaveRequestDocumentsData.LEAVE_REQUEST_DOCUMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.ServicestoreEntries SERVICESTORE_ENTRIES = com.sonicle.webtop.drm.jooq.tables.ServicestoreEntries.SERVICESTORE_ENTRIES;
 
     /**
-     * The table <code>drm.leave_requests</code>.
+     * The table <code>core.settings</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LeaveRequests LEAVE_REQUESTS = com.sonicle.webtop.drm.jooq.tables.LeaveRequests.LEAVE_REQUESTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Settings SETTINGS = com.sonicle.webtop.drm.jooq.tables.Settings.SETTINGS;
 
     /**
-     * The table <code>drm.line_hours</code>.
+     * The table <code>core.settings_db</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LineHours LINE_HOURS = com.sonicle.webtop.drm.jooq.tables.LineHours.LINE_HOURS;
+    public static final com.sonicle.webtop.drm.jooq.tables.SettingsDb SETTINGS_DB = com.sonicle.webtop.drm.jooq.tables.SettingsDb.SETTINGS_DB;
 
     /**
-     * The table <code>drm.line_manager_users</code>.
+     * The table <code>core.shares</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LineManagerUsers LINE_MANAGER_USERS = com.sonicle.webtop.drm.jooq.tables.LineManagerUsers.LINE_MANAGER_USERS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Shares SHARES = com.sonicle.webtop.drm.jooq.tables.Shares.SHARES;
 
     /**
-     * The table <code>drm.line_managers</code>.
+     * The table <code>core.shares_data</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.LineManagers LINE_MANAGERS = com.sonicle.webtop.drm.jooq.tables.LineManagers.LINE_MANAGERS;
+    public static final com.sonicle.webtop.drm.jooq.tables.SharesData SHARES_DATA = com.sonicle.webtop.drm.jooq.tables.SharesData.SHARES_DATA;
 
     /**
-     * The table <code>drm.opportunities</code>.
+     * The table <code>core.snoozed_reminders</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Opportunities OPPORTUNITIES = com.sonicle.webtop.drm.jooq.tables.Opportunities.OPPORTUNITIES;
+    public static final com.sonicle.webtop.drm.jooq.tables.SnoozedReminders SNOOZED_REMINDERS = com.sonicle.webtop.drm.jooq.tables.SnoozedReminders.SNOOZED_REMINDERS;
 
     /**
-     * The table <code>drm.opportunity_action_documents</code>.
+     * The table <code>core.syslog</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityActionDocuments OPPORTUNITY_ACTION_DOCUMENTS = com.sonicle.webtop.drm.jooq.tables.OpportunityActionDocuments.OPPORTUNITY_ACTION_DOCUMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Syslog SYSLOG = com.sonicle.webtop.drm.jooq.tables.Syslog.SYSLOG;
 
     /**
-     * The table <code>drm.opportunity_action_documents_data</code>.
+     * The table <code>core.tags</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityActionDocumentsData OPPORTUNITY_ACTION_DOCUMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.OpportunityActionDocumentsData.OPPORTUNITY_ACTION_DOCUMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.Tags TAGS = com.sonicle.webtop.drm.jooq.tables.Tags.TAGS;
 
     /**
-     * The table <code>drm.opportunity_action_interlocutors</code>.
+     * The table <code>core.upgrade_statements</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityActionInterlocutors OPPORTUNITY_ACTION_INTERLOCUTORS = com.sonicle.webtop.drm.jooq.tables.OpportunityActionInterlocutors.OPPORTUNITY_ACTION_INTERLOCUTORS;
+    public static final com.sonicle.webtop.drm.jooq.tables.UpgradeStatements UPGRADE_STATEMENTS = com.sonicle.webtop.drm.jooq.tables.UpgradeStatements.UPGRADE_STATEMENTS;
 
     /**
-     * The table <code>drm.opportunity_actions</code>.
+     * The table <code>core.user_settings</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityActions OPPORTUNITY_ACTIONS = com.sonicle.webtop.drm.jooq.tables.OpportunityActions.OPPORTUNITY_ACTIONS;
+    public static final com.sonicle.webtop.drm.jooq.tables.UserSettings USER_SETTINGS = com.sonicle.webtop.drm.jooq.tables.UserSettings.USER_SETTINGS;
 
     /**
-     * The table <code>drm.opportunity_documents</code>.
+     * The table <code>core.users</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityDocuments OPPORTUNITY_DOCUMENTS = com.sonicle.webtop.drm.jooq.tables.OpportunityDocuments.OPPORTUNITY_DOCUMENTS;
+    public static final com.sonicle.webtop.drm.jooq.tables.Users USERS = com.sonicle.webtop.drm.jooq.tables.Users.USERS;
 
     /**
-     * The table <code>drm.opportunity_documents_data</code>.
+     * The table <code>core.users_associations</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityDocumentsData OPPORTUNITY_DOCUMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.OpportunityDocumentsData.OPPORTUNITY_DOCUMENTS_DATA;
+    public static final com.sonicle.webtop.drm.jooq.tables.UsersAssociations USERS_ASSOCIATIONS = com.sonicle.webtop.drm.jooq.tables.UsersAssociations.USERS_ASSOCIATIONS;
 
     /**
-     * The table <code>drm.opportunity_fields</code>.
+     * The table <code>core.users_info</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityFields OPPORTUNITY_FIELDS = com.sonicle.webtop.drm.jooq.tables.OpportunityFields.OPPORTUNITY_FIELDS;
+    public static final com.sonicle.webtop.drm.jooq.tables.UsersInfo USERS_INFO = com.sonicle.webtop.drm.jooq.tables.UsersInfo.USERS_INFO;
 
     /**
-     * The table <code>drm.opportunity_interlocutors</code>.
+     * The table <code>core.vw_access_log</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.OpportunityInterlocutors OPPORTUNITY_INTERLOCUTORS = com.sonicle.webtop.drm.jooq.tables.OpportunityInterlocutors.OPPORTUNITY_INTERLOCUTORS;
+    public static final com.sonicle.webtop.drm.jooq.tables.VwAccessLog VW_ACCESS_LOG = com.sonicle.webtop.drm.jooq.tables.VwAccessLog.VW_ACCESS_LOG;
 
     /**
-     * The table <code>drm.profiles</code>.
+     * The table <code>core.vw_auth_details</code>.
      */
-    public static final com.sonicle.webtop.drm.jooq.tables.Profiles PROFILES = com.sonicle.webtop.drm.jooq.tables.Profiles.PROFILES;
-
-    /**
-     * The table <code>drm.profiles_masterdata</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.ProfilesMasterdata PROFILES_MASTERDATA = com.sonicle.webtop.drm.jooq.tables.ProfilesMasterdata.PROFILES_MASTERDATA;
-
-    /**
-     * The table <code>drm.profiles_members</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.ProfilesMembers PROFILES_MEMBERS = com.sonicle.webtop.drm.jooq.tables.ProfilesMembers.PROFILES_MEMBERS;
-
-    /**
-     * The table <code>drm.profiles_supervised_users</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.ProfilesSupervisedUsers PROFILES_SUPERVISED_USERS = com.sonicle.webtop.drm.jooq.tables.ProfilesSupervisedUsers.PROFILES_SUPERVISED_USERS;
-
-    /**
-     * The table <code>drm.ticket_attachments</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TicketAttachments TICKET_ATTACHMENTS = com.sonicle.webtop.drm.jooq.tables.TicketAttachments.TICKET_ATTACHMENTS;
-
-    /**
-     * The table <code>drm.ticket_attachments_data</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TicketAttachmentsData TICKET_ATTACHMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.TicketAttachmentsData.TICKET_ATTACHMENTS_DATA;
-
-    /**
-     * The table <code>drm.ticket_categories</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TicketCategories TICKET_CATEGORIES = com.sonicle.webtop.drm.jooq.tables.TicketCategories.TICKET_CATEGORIES;
-
-    /**
-     * The table <code>drm.tickets</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.Tickets TICKETS = com.sonicle.webtop.drm.jooq.tables.Tickets.TICKETS;
-
-    /**
-     * The table <code>drm.tickets_settings</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TicketsSettings TICKETS_SETTINGS = com.sonicle.webtop.drm.jooq.tables.TicketsSettings.TICKETS_SETTINGS;
-
-    /**
-     * The table <code>drm.timetable_events</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TimetableEvents TIMETABLE_EVENTS = com.sonicle.webtop.drm.jooq.tables.TimetableEvents.TIMETABLE_EVENTS;
-
-    /**
-     * The table <code>drm.timetable_report_temp</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp TIMETABLE_REPORT_TEMP = com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp.TIMETABLE_REPORT_TEMP;
-
-    /**
-     * The table <code>drm.timetable_settings</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TimetableSettings TIMETABLE_SETTINGS = com.sonicle.webtop.drm.jooq.tables.TimetableSettings.TIMETABLE_SETTINGS;
-
-    /**
-     * The table <code>drm.timetable_stamp</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TimetableStamp TIMETABLE_STAMP = com.sonicle.webtop.drm.jooq.tables.TimetableStamp.TIMETABLE_STAMP;
-
-    /**
-     * The table <code>drm.vw_jobs</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.VwJobs VW_JOBS = com.sonicle.webtop.drm.jooq.tables.VwJobs.VW_JOBS;
-
-    /**
-     * The table <code>drm.vw_tickets</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.VwTickets VW_TICKETS = com.sonicle.webtop.drm.jooq.tables.VwTickets.VW_TICKETS;
-
-    /**
-     * The table <code>drm.vw_work_reports</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.VwWorkReports VW_WORK_REPORTS = com.sonicle.webtop.drm.jooq.tables.VwWorkReports.VW_WORK_REPORTS;
-
-    /**
-     * The table <code>drm.work_reports</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkReports WORK_REPORTS = com.sonicle.webtop.drm.jooq.tables.WorkReports.WORK_REPORTS;
-
-    /**
-     * The table <code>drm.work_reports_attachments</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkReportsAttachments WORK_REPORTS_ATTACHMENTS = com.sonicle.webtop.drm.jooq.tables.WorkReportsAttachments.WORK_REPORTS_ATTACHMENTS;
-
-    /**
-     * The table <code>drm.work_reports_attachments_data</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkReportsAttachmentsData WORK_REPORTS_ATTACHMENTS_DATA = com.sonicle.webtop.drm.jooq.tables.WorkReportsAttachmentsData.WORK_REPORTS_ATTACHMENTS_DATA;
-
-    /**
-     * The table <code>drm.work_reports_rows</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkReportsRows WORK_REPORTS_ROWS = com.sonicle.webtop.drm.jooq.tables.WorkReportsRows.WORK_REPORTS_ROWS;
-
-    /**
-     * The table <code>drm.work_reports_settings</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkReportsSettings WORK_REPORTS_SETTINGS = com.sonicle.webtop.drm.jooq.tables.WorkReportsSettings.WORK_REPORTS_SETTINGS;
-
-    /**
-     * The table <code>drm.work_types</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.WorkTypes WORK_TYPES = com.sonicle.webtop.drm.jooq.tables.WorkTypes.WORK_TYPES;
+    public static final com.sonicle.webtop.drm.jooq.tables.VwAuthDetails VW_AUTH_DETAILS = com.sonicle.webtop.drm.jooq.tables.VwAuthDetails.VW_AUTH_DETAILS;
 }

@@ -14,7 +14,7 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     private static final long serialVersionUID = 1L;
 
     /**
-     * The reference instance of <code>drm.causals</code>
+     * The reference instance of <code>core.causals</code>
      */
     public static final Causals CAUSALS = new Causals();
 
@@ -27,19 +27,44 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     }
 
     /**
-     * The column <code>drm.causals.id</code>.
+     * The column <code>core.causals.causal_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> ID = createField(org.jooq.impl.DSL.name("id"), org.jooq.impl.SQLDataType.VARCHAR(5).nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.Integer> CAUSAL_ID = createField(org.jooq.impl.DSL.name("causal_id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).defaultValue(org.jooq.impl.DSL.field("nextval('core.seq_causals'::regclass)", org.jooq.impl.SQLDataType.INTEGER)), this, "");
 
     /**
-     * The column <code>drm.causals.description</code>.
+     * The column <code>core.causals.domain_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(100).nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> DOMAIN_ID = createField(org.jooq.impl.DSL.name("domain_id"), org.jooq.impl.SQLDataType.VARCHAR(20).nullable(false), this, "");
 
     /**
-     * The column <code>drm.causals.external_code</code>.
+     * The column <code>core.causals.user_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> EXTERNAL_CODE = createField(org.jooq.impl.DSL.name("external_code"), org.jooq.impl.SQLDataType.VARCHAR(5).nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> USER_ID = createField(org.jooq.impl.DSL.name("user_id"), org.jooq.impl.SQLDataType.VARCHAR(100).nullable(false), this, "");
+
+    /**
+     * The column <code>core.causals.master_data_id</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> MASTER_DATA_ID = createField(org.jooq.impl.DSL.name("master_data_id"), org.jooq.impl.SQLDataType.VARCHAR(36), this, "");
+
+    /**
+     * The column <code>core.causals.revision_status</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> REVISION_STATUS = createField(org.jooq.impl.DSL.name("revision_status"), org.jooq.impl.SQLDataType.VARCHAR(1).nullable(false), this, "");
+
+    /**
+     * The column <code>core.causals.description</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(255).nullable(false), this, "");
+
+    /**
+     * The column <code>core.causals.read_only</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.Boolean> READ_ONLY = createField(org.jooq.impl.DSL.name("read_only"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+
+    /**
+     * The column <code>core.causals.external_id</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord, java.lang.String> EXTERNAL_ID = createField(org.jooq.impl.DSL.name("external_id"), org.jooq.impl.SQLDataType.VARCHAR(100), this, "");
 
     private Causals(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord> aliased) {
         this(alias, aliased, null);
@@ -50,21 +75,21 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     }
 
     /**
-     * Create an aliased <code>drm.causals</code> table reference
+     * Create an aliased <code>core.causals</code> table reference
      */
     public Causals(java.lang.String alias) {
         this(org.jooq.impl.DSL.name(alias), CAUSALS);
     }
 
     /**
-     * Create an aliased <code>drm.causals</code> table reference
+     * Create an aliased <code>core.causals</code> table reference
      */
     public Causals(org.jooq.Name alias) {
         this(alias, CAUSALS);
     }
 
     /**
-     * Create a <code>drm.causals</code> table reference
+     * Create a <code>core.causals</code> table reference
      */
     public Causals() {
         this(org.jooq.impl.DSL.name("causals"), null);
@@ -76,7 +101,12 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
 
     @java.lang.Override
     public org.jooq.Schema getSchema() {
-        return com.sonicle.webtop.drm.jooq.Drm.DRM;
+        return com.sonicle.webtop.drm.jooq.Core.CORE;
+    }
+
+    @java.lang.Override
+    public java.util.List<org.jooq.Index> getIndexes() {
+        return java.util.Arrays.<org.jooq.Index>asList(com.sonicle.webtop.drm.jooq.Indexes.CAUSALS_AK1, com.sonicle.webtop.drm.jooq.Indexes.CAUSALS_AK2);
     }
 
     @java.lang.Override
@@ -116,11 +146,11 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     }
 
     // -------------------------------------------------------------------------
-    // Row3 type methods
+    // Row8 type methods
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row3<java.lang.String, java.lang.String, java.lang.String> fieldsRow() {
-        return (org.jooq.Row3) super.fieldsRow();
+    public org.jooq.Row8<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String> fieldsRow() {
+        return (org.jooq.Row8) super.fieldsRow();
     }
 }

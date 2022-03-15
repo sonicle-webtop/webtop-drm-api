@@ -14,7 +14,7 @@ public class Activities extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.j
     private static final long serialVersionUID = 1L;
 
     /**
-     * The reference instance of <code>drm.activities</code>
+     * The reference instance of <code>core.activities</code>
      */
     public static final Activities ACTIVITIES = new Activities();
 
@@ -27,49 +27,39 @@ public class Activities extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.j
     }
 
     /**
-     * The column <code>drm.activities.activity_id</code>.
+     * The column <code>core.activities.activity_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Integer> ACTIVITY_ID = createField(org.jooq.impl.DSL.name("activity_id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).defaultValue(org.jooq.impl.DSL.field("nextval('drm.seq_activities'::regclass)", org.jooq.impl.SQLDataType.INTEGER)), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Integer> ACTIVITY_ID = createField(org.jooq.impl.DSL.name("activity_id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).defaultValue(org.jooq.impl.DSL.field("nextval('core.seq_activities'::regclass)", org.jooq.impl.SQLDataType.INTEGER)), this, "");
 
     /**
-     * The column <code>drm.activities.domain_id</code>.
+     * The column <code>core.activities.domain_id</code>.
      */
     public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> DOMAIN_ID = createField(org.jooq.impl.DSL.name("domain_id"), org.jooq.impl.SQLDataType.VARCHAR(20).nullable(false), this, "");
 
     /**
-     * The column <code>drm.activities.external_id</code>.
+     * The column <code>core.activities.user_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> EXTERNAL_ID = createField(org.jooq.impl.DSL.name("external_id"), org.jooq.impl.SQLDataType.VARCHAR(50), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> USER_ID = createField(org.jooq.impl.DSL.name("user_id"), org.jooq.impl.SQLDataType.VARCHAR(100).nullable(false), this, "");
 
     /**
-     * The column <code>drm.activities.description</code>.
+     * The column <code>core.activities.revision_status</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(100).nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> REVISION_STATUS = createField(org.jooq.impl.DSL.name("revision_status"), org.jooq.impl.SQLDataType.VARCHAR(1).nullable(false), this, "");
 
     /**
-     * The column <code>drm.activities.customer</code>.
+     * The column <code>core.activities.description</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> CUSTOMER = createField(org.jooq.impl.DSL.name("customer"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(255).nullable(false), this, "");
 
     /**
-     * The column <code>drm.activities.timetable</code>.
+     * The column <code>core.activities.read_only</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> TIMETABLE = createField(org.jooq.impl.DSL.name("timetable"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> READ_ONLY = createField(org.jooq.impl.DSL.name("read_only"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
 
     /**
-     * The column <code>drm.activities.jobs</code>.
+     * The column <code>core.activities.external_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> JOBS = createField(org.jooq.impl.DSL.name("jobs"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
-
-    /**
-     * The column <code>drm.activities.opportunities</code>.
-     */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> OPPORTUNITIES = createField(org.jooq.impl.DSL.name("opportunities"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
-
-    /**
-     * The column <code>drm.activities.exportable</code>.
-     */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.Boolean> EXPORTABLE = createField(org.jooq.impl.DSL.name("exportable"), org.jooq.impl.SQLDataType.BOOLEAN.nullable(false).defaultValue(org.jooq.impl.DSL.field("true", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord, java.lang.String> EXTERNAL_ID = createField(org.jooq.impl.DSL.name("external_id"), org.jooq.impl.SQLDataType.VARCHAR(100), this, "");
 
     private Activities(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.ActivitiesRecord> aliased) {
         this(alias, aliased, null);
@@ -80,21 +70,21 @@ public class Activities extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.j
     }
 
     /**
-     * Create an aliased <code>drm.activities</code> table reference
+     * Create an aliased <code>core.activities</code> table reference
      */
     public Activities(java.lang.String alias) {
         this(org.jooq.impl.DSL.name(alias), ACTIVITIES);
     }
 
     /**
-     * Create an aliased <code>drm.activities</code> table reference
+     * Create an aliased <code>core.activities</code> table reference
      */
     public Activities(org.jooq.Name alias) {
         this(alias, ACTIVITIES);
     }
 
     /**
-     * Create a <code>drm.activities</code> table reference
+     * Create a <code>core.activities</code> table reference
      */
     public Activities() {
         this(org.jooq.impl.DSL.name("activities"), null);
@@ -106,7 +96,7 @@ public class Activities extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.j
 
     @java.lang.Override
     public org.jooq.Schema getSchema() {
-        return com.sonicle.webtop.drm.jooq.Drm.DRM;
+        return com.sonicle.webtop.drm.jooq.Core.CORE;
     }
 
     @java.lang.Override
@@ -151,11 +141,11 @@ public class Activities extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.j
     }
 
     // -------------------------------------------------------------------------
-    // Row9 type methods
+    // Row7 type methods
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row9<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Boolean, java.lang.Boolean, java.lang.Boolean, java.lang.Boolean> fieldsRow() {
-        return (org.jooq.Row9) super.fieldsRow();
+    public org.jooq.Row7<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String> fieldsRow() {
+        return (org.jooq.Row7) super.fieldsRow();
     }
 }

@@ -48,6 +48,7 @@ public class EmployeeProfile {
 	public Boolean extraordinary;
 	public Boolean onlyPresence;
 	public Integer hourProfileId;
+	public String headquartersCode;
 
 	public Integer getId() {
 		return id;
@@ -113,4 +114,11 @@ public class EmployeeProfile {
 		this.hourProfileId = hourProfileId;
 	}
 
+	public String getHeadquartersCode() {
+		return headquartersCode;
+	}
+
+	public void setHeadquartersCode(String headquartersCode) {
+		this.headquartersCode = headquartersCode;
+	}
 }

@@ -39,7 +39,6 @@ package com.sonicle.webtop.drm.model;
 public class TimetableSettingGis {
 
 	private String companyCode;
-	private String headquartersCode;
 
 	public String getCompanyCode() {
 		return companyCode;
@@ -47,13 +46,5 @@ public class TimetableSettingGis {
 
 	public void setCompanyCode(String companyCode) {
 		this.companyCode = companyCode;
-	}
-
-	public String getHeadquartersCode() {
-		return headquartersCode;
-	}
-
-	public void setHeadquartersCode(String headquartersCode) {
-		this.headquartersCode = headquartersCode;
 	}
 }

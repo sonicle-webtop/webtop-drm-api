@@ -21,6 +21,7 @@ public class EmployeeProfiles implements java.io.Serializable {
     private java.lang.Boolean extraordinary;
     private java.lang.Boolean onlyPresence;
     private java.lang.Integer hourProfileId;
+    private java.lang.String  headquartersCode;
 
     public EmployeeProfiles() {}
 
@@ -33,6 +34,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.extraordinary = value.extraordinary;
         this.onlyPresence = value.onlyPresence;
         this.hourProfileId = value.hourProfileId;
+        this.headquartersCode = value.headquartersCode;
     }
 
     public EmployeeProfiles(
@@ -43,7 +45,8 @@ public class EmployeeProfiles implements java.io.Serializable {
         java.lang.String  tolerance,
         java.lang.Boolean extraordinary,
         java.lang.Boolean onlyPresence,
-        java.lang.Integer hourProfileId
+        java.lang.Integer hourProfileId,
+        java.lang.String  headquartersCode
     ) {
         this.id = id;
         this.domainId = domainId;
@@ -53,6 +56,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.extraordinary = extraordinary;
         this.onlyPresence = onlyPresence;
         this.hourProfileId = hourProfileId;
+        this.headquartersCode = headquartersCode;
     }
 
     /**
@@ -167,6 +171,20 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.hourProfileId = hourProfileId;
     }
 
+    /**
+     * Getter for <code>drm.employee_profiles.headquarters_code</code>.
+     */
+    public java.lang.String getHeadquartersCode() {
+        return this.headquartersCode;
+    }
+
+    /**
+     * Setter for <code>drm.employee_profiles.headquarters_code</code>.
+     */
+    public void setHeadquartersCode(java.lang.String headquartersCode) {
+        this.headquartersCode = headquartersCode;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("EmployeeProfiles (");
@@ -179,6 +197,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         sb.append(", ").append(extraordinary);
         sb.append(", ").append(onlyPresence);
         sb.append(", ").append(hourProfileId);
+        sb.append(", ").append(headquartersCode);
 
         sb.append(")");
         return sb.toString();

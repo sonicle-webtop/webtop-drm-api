@@ -22,6 +22,7 @@ public class EmployeeProfiles implements java.io.Serializable {
     private java.lang.Boolean onlyPresence;
     private java.lang.Integer hourProfileId;
     private java.lang.String  headquartersCode;
+    private java.lang.Boolean noStamping;
 
     public EmployeeProfiles() {}
 
@@ -35,6 +36,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.onlyPresence = value.onlyPresence;
         this.hourProfileId = value.hourProfileId;
         this.headquartersCode = value.headquartersCode;
+        this.noStamping = value.noStamping;
     }
 
     public EmployeeProfiles(
@@ -46,7 +48,8 @@ public class EmployeeProfiles implements java.io.Serializable {
         java.lang.Boolean extraordinary,
         java.lang.Boolean onlyPresence,
         java.lang.Integer hourProfileId,
-        java.lang.String  headquartersCode
+        java.lang.String  headquartersCode,
+        java.lang.Boolean noStamping
     ) {
         this.id = id;
         this.domainId = domainId;
@@ -57,6 +60,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.onlyPresence = onlyPresence;
         this.hourProfileId = hourProfileId;
         this.headquartersCode = headquartersCode;
+        this.noStamping = noStamping;
     }
 
     /**
@@ -185,6 +189,20 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.headquartersCode = headquartersCode;
     }
 
+    /**
+     * Getter for <code>drm.employee_profiles.no_stamping</code>.
+     */
+    public java.lang.Boolean getNoStamping() {
+        return this.noStamping;
+    }
+
+    /**
+     * Setter for <code>drm.employee_profiles.no_stamping</code>.
+     */
+    public void setNoStamping(java.lang.Boolean noStamping) {
+        this.noStamping = noStamping;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("EmployeeProfiles (");
@@ -198,6 +216,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         sb.append(", ").append(onlyPresence);
         sb.append(", ").append(hourProfileId);
         sb.append(", ").append(headquartersCode);
+        sb.append(", ").append(noStamping);
 
         sb.append(")");
         return sb.toString();

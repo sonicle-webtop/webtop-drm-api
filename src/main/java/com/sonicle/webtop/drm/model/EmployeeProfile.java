@@ -49,6 +49,7 @@ public class EmployeeProfile {
 	public Boolean onlyPresence;
 	public Integer hourProfileId;
 	public String headquartersCode;
+	public Boolean noStamping;
 
 	public Integer getId() {
 		return id;
@@ -121,4 +122,13 @@ public class EmployeeProfile {
 	public void setHeadquartersCode(String headquartersCode) {
 		this.headquartersCode = headquartersCode;
 	}
+
+	public Boolean getNoStamping() {
+		return noStamping;
+	}
+
+	public void setNoStamping(Boolean noStamping) {
+		this.noStamping = noStamping;
+	}
+
 }

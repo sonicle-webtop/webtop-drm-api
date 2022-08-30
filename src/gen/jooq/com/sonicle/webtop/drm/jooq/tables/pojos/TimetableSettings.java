@@ -40,6 +40,8 @@ public class TimetableSettings implements java.io.Serializable {
     private java.lang.String  defaultCausalHolidays;
     private java.lang.String  defaultCausalSickness;
     private java.lang.String  defaultCausalMedicalVisit;
+    private java.lang.Integer minimumNumberOfHoursPerTicket;
+    private java.lang.Boolean ticketManagement;
 
     public TimetableSettings() {}
 
@@ -71,6 +73,8 @@ public class TimetableSettings implements java.io.Serializable {
         this.defaultCausalHolidays = value.defaultCausalHolidays;
         this.defaultCausalSickness = value.defaultCausalSickness;
         this.defaultCausalMedicalVisit = value.defaultCausalMedicalVisit;
+        this.minimumNumberOfHoursPerTicket = value.minimumNumberOfHoursPerTicket;
+        this.ticketManagement = value.ticketManagement;
     }
 
     public TimetableSettings(
@@ -100,7 +104,9 @@ public class TimetableSettings implements java.io.Serializable {
         java.lang.String  defaultCausalPermits,
         java.lang.String  defaultCausalHolidays,
         java.lang.String  defaultCausalSickness,
-        java.lang.String  defaultCausalMedicalVisit
+        java.lang.String  defaultCausalMedicalVisit,
+        java.lang.Integer minimumNumberOfHoursPerTicket,
+        java.lang.Boolean ticketManagement
     ) {
         this.timetableSettingId = timetableSettingId;
         this.domainId = domainId;
@@ -129,6 +135,8 @@ public class TimetableSettings implements java.io.Serializable {
         this.defaultCausalHolidays = defaultCausalHolidays;
         this.defaultCausalSickness = defaultCausalSickness;
         this.defaultCausalMedicalVisit = defaultCausalMedicalVisit;
+        this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+        this.ticketManagement = ticketManagement;
     }
 
     /**
@@ -509,6 +517,34 @@ public class TimetableSettings implements java.io.Serializable {
         this.defaultCausalMedicalVisit = defaultCausalMedicalVisit;
     }
 
+    /**
+     * Getter for <code>drm.timetable_settings.minimum_number_of_hours_per_ticket</code>.
+     */
+    public java.lang.Integer getMinimumNumberOfHoursPerTicket() {
+        return this.minimumNumberOfHoursPerTicket;
+    }
+
+    /**
+     * Setter for <code>drm.timetable_settings.minimum_number_of_hours_per_ticket</code>.
+     */
+    public void setMinimumNumberOfHoursPerTicket(java.lang.Integer minimumNumberOfHoursPerTicket) {
+        this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+    }
+
+    /**
+     * Getter for <code>drm.timetable_settings.ticket_management</code>.
+     */
+    public java.lang.Boolean getTicketManagement() {
+        return this.ticketManagement;
+    }
+
+    /**
+     * Setter for <code>drm.timetable_settings.ticket_management</code>.
+     */
+    public void setTicketManagement(java.lang.Boolean ticketManagement) {
+        this.ticketManagement = ticketManagement;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("TimetableSettings (");
@@ -540,6 +576,8 @@ public class TimetableSettings implements java.io.Serializable {
         sb.append(", ").append(defaultCausalHolidays);
         sb.append(", ").append(defaultCausalSickness);
         sb.append(", ").append(defaultCausalMedicalVisit);
+        sb.append(", ").append(minimumNumberOfHoursPerTicket);
+        sb.append(", ").append(ticketManagement);
 
         sb.append(")");
         return sb.toString();

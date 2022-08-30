@@ -81,12 +81,12 @@ public class HourProfiles extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm
 
     @java.lang.Override
     public org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.HourProfilesRecord> getPrimaryKey() {
-        return com.sonicle.webtop.drm.jooq.Keys.HOUR_PROFILES_PKEY;
+        return com.sonicle.webtop.drm.jooq.Keys.OUR_PROFILES_PKEY;
     }
 
     @java.lang.Override
     public java.util.List<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.HourProfilesRecord>> getKeys() {
-        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.HourProfilesRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.HOUR_PROFILES_PKEY);
+        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.HourProfilesRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.OUR_PROFILES_PKEY);
     }
 
     @java.lang.Override

@@ -23,6 +23,7 @@ public class EmployeeProfiles implements java.io.Serializable {
     private java.lang.Integer hourProfileId;
     private java.lang.String  headquartersCode;
     private java.lang.Boolean noStamping;
+    private java.lang.Integer minimumNumberOfHoursPerTicket;
 
     public EmployeeProfiles() {}
 
@@ -37,6 +38,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.hourProfileId = value.hourProfileId;
         this.headquartersCode = value.headquartersCode;
         this.noStamping = value.noStamping;
+        this.minimumNumberOfHoursPerTicket = value.minimumNumberOfHoursPerTicket;
     }
 
     public EmployeeProfiles(
@@ -49,7 +51,8 @@ public class EmployeeProfiles implements java.io.Serializable {
         java.lang.Boolean onlyPresence,
         java.lang.Integer hourProfileId,
         java.lang.String  headquartersCode,
-        java.lang.Boolean noStamping
+        java.lang.Boolean noStamping,
+        java.lang.Integer minimumNumberOfHoursPerTicket
     ) {
         this.id = id;
         this.domainId = domainId;
@@ -61,6 +64,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.hourProfileId = hourProfileId;
         this.headquartersCode = headquartersCode;
         this.noStamping = noStamping;
+        this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
     }
 
     /**
@@ -203,6 +207,20 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.noStamping = noStamping;
     }
 
+    /**
+     * Getter for <code>drm.employee_profiles.minimum_number_of_hours_per_ticket</code>.
+     */
+    public java.lang.Integer getMinimumNumberOfHoursPerTicket() {
+        return this.minimumNumberOfHoursPerTicket;
+    }
+
+    /**
+     * Setter for <code>drm.employee_profiles.minimum_number_of_hours_per_ticket</code>.
+     */
+    public void setMinimumNumberOfHoursPerTicket(java.lang.Integer minimumNumberOfHoursPerTicket) {
+        this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("EmployeeProfiles (");
@@ -217,6 +235,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         sb.append(", ").append(hourProfileId);
         sb.append(", ").append(headquartersCode);
         sb.append(", ").append(noStamping);
+        sb.append(", ").append(minimumNumberOfHoursPerTicket);
 
         sb.append(")");
         return sb.toString();

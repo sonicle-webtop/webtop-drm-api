@@ -391,6 +391,34 @@ public class TimetableSettingsRecord extends org.jooq.impl.UpdatableRecordImpl<T
         return (java.lang.String) get(26);
     }
 
+    /**
+     * Setter for <code>drm.timetable_settings.minimum_number_of_hours_per_ticket</code>.
+     */
+    public void setMinimumNumberOfHoursPerTicket(java.lang.Integer value) {
+        set(27, value);
+    }
+
+    /**
+     * Getter for <code>drm.timetable_settings.minimum_number_of_hours_per_ticket</code>.
+     */
+    public java.lang.Integer getMinimumNumberOfHoursPerTicket() {
+        return (java.lang.Integer) get(27);
+    }
+
+    /**
+     * Setter for <code>drm.timetable_settings.ticket_management</code>.
+     */
+    public void setTicketManagement(java.lang.Boolean value) {
+        set(28, value);
+    }
+
+    /**
+     * Getter for <code>drm.timetable_settings.ticket_management</code>.
+     */
+    public java.lang.Boolean getTicketManagement() {
+        return (java.lang.Boolean) get(28);
+    }
+
     // -------------------------------------------------------------------------
     // Primary key information
     // -------------------------------------------------------------------------
@@ -414,7 +442,7 @@ public class TimetableSettingsRecord extends org.jooq.impl.UpdatableRecordImpl<T
     /**
      * Create a detached, initialised TimetableSettingsRecord
      */
-    public TimetableSettingsRecord(java.lang.Integer timetableSettingId, java.lang.String domainId, java.lang.String allowedAddresses, java.lang.String allowedUsers, java.lang.String staffOfficeEmail, java.lang.Boolean requestsHolidaysPermitsPreviousDates, java.lang.String totalToleranceInMinutes, java.lang.String rounding, java.lang.String minimumExtraordinary, java.lang.Boolean breakAnomaly, java.lang.Boolean readOnlyEvents, java.lang.Boolean requestsPermitsNotRemunered, java.lang.Boolean requestsPermitsMedicalVisits, java.lang.Boolean requestsPermitsContractuals, java.lang.Boolean companyExit, java.lang.Boolean manageStamp, java.lang.Boolean medicalVisitsAutomaticallyApproved, java.lang.String calendarUserId, java.lang.Integer defaultEventActivityId, java.lang.Boolean requestsSickness, java.lang.Boolean sicknessAutomaticallyApproved, java.lang.String defaultCausalWorkingHours, java.lang.String defaultCausalOvertime, java.lang.String defaultCausalPermits, java.lang.String defaultCausalHolidays, java.lang.String defaultCausalSickness, java.lang.String defaultCausalMedicalVisit) {
+    public TimetableSettingsRecord(java.lang.Integer timetableSettingId, java.lang.String domainId, java.lang.String allowedAddresses, java.lang.String allowedUsers, java.lang.String staffOfficeEmail, java.lang.Boolean requestsHolidaysPermitsPreviousDates, java.lang.String totalToleranceInMinutes, java.lang.String rounding, java.lang.String minimumExtraordinary, java.lang.Boolean breakAnomaly, java.lang.Boolean readOnlyEvents, java.lang.Boolean requestsPermitsNotRemunered, java.lang.Boolean requestsPermitsMedicalVisits, java.lang.Boolean requestsPermitsContractuals, java.lang.Boolean companyExit, java.lang.Boolean manageStamp, java.lang.Boolean medicalVisitsAutomaticallyApproved, java.lang.String calendarUserId, java.lang.Integer defaultEventActivityId, java.lang.Boolean requestsSickness, java.lang.Boolean sicknessAutomaticallyApproved, java.lang.String defaultCausalWorkingHours, java.lang.String defaultCausalOvertime, java.lang.String defaultCausalPermits, java.lang.String defaultCausalHolidays, java.lang.String defaultCausalSickness, java.lang.String defaultCausalMedicalVisit, java.lang.Integer minimumNumberOfHoursPerTicket, java.lang.Boolean ticketManagement) {
         super(com.sonicle.webtop.drm.jooq.tables.TimetableSettings.TIMETABLE_SETTINGS);
 
         setTimetableSettingId(timetableSettingId);
@@ -444,5 +472,7 @@ public class TimetableSettingsRecord extends org.jooq.impl.UpdatableRecordImpl<T
         setDefaultCausalHolidays(defaultCausalHolidays);
         setDefaultCausalSickness(defaultCausalSickness);
         setDefaultCausalMedicalVisit(defaultCausalMedicalVisit);
+        setMinimumNumberOfHoursPerTicket(minimumNumberOfHoursPerTicket);
+        setTicketManagement(ticketManagement);
     }
 }

@@ -161,6 +161,16 @@ public class TimetableSettings extends org.jooq.impl.TableImpl<com.sonicle.webto
      */
     public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.String> DEFAULT_CAUSAL_MEDICAL_VISIT = createField(org.jooq.impl.DSL.name("default_causal_medical_visit"), org.jooq.impl.SQLDataType.VARCHAR(5), this, "");
 
+    /**
+     * The column <code>drm.timetable_settings.minimum_number_of_hours_per_ticket</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Integer> MINIMUM_NUMBER_OF_HOURS_PER_TICKET = createField(org.jooq.impl.DSL.name("minimum_number_of_hours_per_ticket"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+
+    /**
+     * The column <code>drm.timetable_settings.ticket_management</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Boolean> TICKET_MANAGEMENT = createField(org.jooq.impl.DSL.name("ticket_management"), org.jooq.impl.SQLDataType.BOOLEAN, this, "");
+
     private TimetableSettings(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord> aliased) {
         this(alias, aliased, null);
     }

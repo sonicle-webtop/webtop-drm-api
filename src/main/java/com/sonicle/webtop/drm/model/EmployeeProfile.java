@@ -50,6 +50,7 @@ public class EmployeeProfile {
 	public Integer hourProfileId;
 	public String headquartersCode;
 	public Boolean noStamping;
+	public Integer minimumNumberOfHoursPerTicket;
 
 	public Integer getId() {
 		return id;
@@ -129,6 +130,14 @@ public class EmployeeProfile {
 
 	public void setNoStamping(Boolean noStamping) {
 		this.noStamping = noStamping;
+	}
+
+	public Integer getMinimumNumberOfHoursPerTicket() {
+		return minimumNumberOfHoursPerTicket;
+	}
+
+	public void setMinimumNumberOfHoursPerTicket(Integer minimumNumberOfHoursPerTicket) {
+		this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
 	}
 
 }

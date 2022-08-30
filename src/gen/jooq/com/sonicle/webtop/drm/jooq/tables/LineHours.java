@@ -190,6 +190,16 @@ public class LineHours extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jo
     }
 
     @java.lang.Override
+    public org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.LineHoursRecord> getPrimaryKey() {
+        return com.sonicle.webtop.drm.jooq.Keys.EMPLOYEE_HOURS_PKEY;
+    }
+
+    @java.lang.Override
+    public java.util.List<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.LineHoursRecord>> getKeys() {
+        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.LineHoursRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.EMPLOYEE_HOURS_PKEY);
+    }
+
+    @java.lang.Override
     public LineHours as(java.lang.String alias) {
         return new LineHours(org.jooq.impl.DSL.name(alias), this);
     }

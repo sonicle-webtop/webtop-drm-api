@@ -277,11 +277,6 @@ public class Tables {
     public static final com.sonicle.webtop.drm.jooq.tables.TimetableEvents TIMETABLE_EVENTS = com.sonicle.webtop.drm.jooq.tables.TimetableEvents.TIMETABLE_EVENTS;
 
     /**
-     * The table <code>drm.timetable_events_copy</code>.
-     */
-    public static final com.sonicle.webtop.drm.jooq.tables.TimetableEventsCopy TIMETABLE_EVENTS_COPY = com.sonicle.webtop.drm.jooq.tables.TimetableEventsCopy.TIMETABLE_EVENTS_COPY;
-
-    /**
      * The table <code>drm.timetable_report_temp</code>.
      */
     public static final com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp TIMETABLE_REPORT_TEMP = com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp.TIMETABLE_REPORT_TEMP;

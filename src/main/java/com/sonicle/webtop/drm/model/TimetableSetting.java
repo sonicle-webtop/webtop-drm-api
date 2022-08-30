@@ -68,6 +68,8 @@ public class TimetableSetting {
 	private String defaultCausalHolidays;
 	private String defaultCausalSickness;
 	private String defaultCausalMedicalVisit;
+	private Integer minimumNumberOfHoursPerTicket;
+	private Boolean ticketManagement;
 	
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -294,4 +296,21 @@ public class TimetableSetting {
 	public void setDefaultCausalMedicalVisit(String defaultCausalMedicalVisit) {
 		this.defaultCausalMedicalVisit = defaultCausalMedicalVisit;
 	}
+
+	public Integer getMinimumNumberOfHoursPerTicket() {
+		return minimumNumberOfHoursPerTicket;
+	}
+
+	public void setMinimumNumberOfHoursPerTicket(Integer minimumNumberOfHoursPerTicket) {
+		this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+	}
+
+	public Boolean getTicketManagement() {
+		return ticketManagement;
+	}
+
+	public void setTicketManagement(Boolean ticketManagement) {
+		this.ticketManagement = ticketManagement;
+	}
+
 }

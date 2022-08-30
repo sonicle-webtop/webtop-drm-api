@@ -39,7 +39,7 @@ public class CostTypes extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jo
     /**
      * The column <code>drm.cost_types.description</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CostTypesRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(60), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.CostTypesRecord, java.lang.String> DESCRIPTION = createField(org.jooq.impl.DSL.name("description"), org.jooq.impl.SQLDataType.VARCHAR(30), this, "");
 
     /**
      * The column <code>drm.cost_types.max_import</code>.

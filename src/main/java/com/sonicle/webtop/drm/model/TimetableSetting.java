@@ -70,6 +70,7 @@ public class TimetableSetting {
 	private String defaultCausalMedicalVisit;
 	private Integer minimumNumberOfHoursPerTicket;
 	private Boolean ticketManagement;
+	private Boolean automaticOvertime;
 	
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -311,6 +312,14 @@ public class TimetableSetting {
 
 	public void setTicketManagement(Boolean ticketManagement) {
 		this.ticketManagement = ticketManagement;
+	}
+
+	public Boolean getAutomaticOvertime() {
+		return automaticOvertime;
+	}
+
+	public void setAutomaticOvertime(Boolean automaticOvertime) {
+		this.automaticOvertime = automaticOvertime;
 	}
 
 }

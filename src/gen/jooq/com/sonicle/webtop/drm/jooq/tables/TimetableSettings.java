@@ -171,6 +171,11 @@ public class TimetableSettings extends org.jooq.impl.TableImpl<com.sonicle.webto
      */
     public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Boolean> TICKET_MANAGEMENT = createField(org.jooq.impl.DSL.name("ticket_management"), org.jooq.impl.SQLDataType.BOOLEAN, this, "");
 
+    /**
+     * The column <code>drm.timetable_settings.automatic_overtime</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Boolean> AUTOMATIC_OVERTIME = createField(org.jooq.impl.DSL.name("automatic_overtime"), org.jooq.impl.SQLDataType.BOOLEAN, this, "");
+
     private TimetableSettings(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord> aliased) {
         this(alias, aliased, null);
     }

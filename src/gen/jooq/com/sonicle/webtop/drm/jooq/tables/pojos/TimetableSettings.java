@@ -42,6 +42,7 @@ public class TimetableSettings implements java.io.Serializable {
     private java.lang.String  defaultCausalMedicalVisit;
     private java.lang.Integer minimumNumberOfHoursPerTicket;
     private java.lang.Boolean ticketManagement;
+    private java.lang.Boolean automaticOvertime;
 
     public TimetableSettings() {}
 
@@ -75,6 +76,7 @@ public class TimetableSettings implements java.io.Serializable {
         this.defaultCausalMedicalVisit = value.defaultCausalMedicalVisit;
         this.minimumNumberOfHoursPerTicket = value.minimumNumberOfHoursPerTicket;
         this.ticketManagement = value.ticketManagement;
+        this.automaticOvertime = value.automaticOvertime;
     }
 
     public TimetableSettings(
@@ -106,7 +108,8 @@ public class TimetableSettings implements java.io.Serializable {
         java.lang.String  defaultCausalSickness,
         java.lang.String  defaultCausalMedicalVisit,
         java.lang.Integer minimumNumberOfHoursPerTicket,
-        java.lang.Boolean ticketManagement
+        java.lang.Boolean ticketManagement,
+        java.lang.Boolean automaticOvertime
     ) {
         this.timetableSettingId = timetableSettingId;
         this.domainId = domainId;
@@ -137,6 +140,7 @@ public class TimetableSettings implements java.io.Serializable {
         this.defaultCausalMedicalVisit = defaultCausalMedicalVisit;
         this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
         this.ticketManagement = ticketManagement;
+        this.automaticOvertime = automaticOvertime;
     }
 
     /**
@@ -545,6 +549,20 @@ public class TimetableSettings implements java.io.Serializable {
         this.ticketManagement = ticketManagement;
     }
 
+    /**
+     * Getter for <code>drm.timetable_settings.automatic_overtime</code>.
+     */
+    public java.lang.Boolean getAutomaticOvertime() {
+        return this.automaticOvertime;
+    }
+
+    /**
+     * Setter for <code>drm.timetable_settings.automatic_overtime</code>.
+     */
+    public void setAutomaticOvertime(java.lang.Boolean automaticOvertime) {
+        this.automaticOvertime = automaticOvertime;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("TimetableSettings (");
@@ -578,6 +596,7 @@ public class TimetableSettings implements java.io.Serializable {
         sb.append(", ").append(defaultCausalMedicalVisit);
         sb.append(", ").append(minimumNumberOfHoursPerTicket);
         sb.append(", ").append(ticketManagement);
+        sb.append(", ").append(automaticOvertime);
 
         sb.append(")");
         return sb.toString();

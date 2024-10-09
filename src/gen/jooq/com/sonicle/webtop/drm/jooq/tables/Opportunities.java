@@ -191,12 +191,12 @@ public class Opportunities extends org.jooq.impl.TableImpl<com.sonicle.webtop.dr
 
     @java.lang.Override
     public org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord> getPrimaryKey() {
-        return com.sonicle.webtop.drm.jooq.Keys.OPPORTUNITY_PKEY;
+        return com.sonicle.webtop.drm.jooq.Keys.OPPORTUNITIES_PKEY;
     }
 
     @java.lang.Override
     public java.util.List<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord>> getKeys() {
-        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.OPPORTUNITY_PKEY);
+        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.OPPORTUNITIES_PKEY);
     }
 
     @java.lang.Override

@@ -29,7 +29,7 @@ public class ProfilesMembers extends org.jooq.impl.TableImpl<com.sonicle.webtop.
     /**
      * The column <code>drm.profiles_members.id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord, java.lang.Integer> ID = createField(org.jooq.impl.DSL.name("id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).defaultValue(org.jooq.impl.DSL.field("nextval('drm.seq_profiles_users'::regclass)", org.jooq.impl.SQLDataType.INTEGER)), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord, java.lang.Integer> ID = createField(org.jooq.impl.DSL.name("id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).defaultValue(org.jooq.impl.DSL.field("nextval('drm.seq_profiles_members'::regclass)", org.jooq.impl.SQLDataType.INTEGER)), this, "");
 
     /**
      * The column <code>drm.profiles_members.profile_id</code>.
@@ -81,12 +81,12 @@ public class ProfilesMembers extends org.jooq.impl.TableImpl<com.sonicle.webtop.
 
     @java.lang.Override
     public org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord> getPrimaryKey() {
-        return com.sonicle.webtop.drm.jooq.Keys.PROFILES_USERS_PKEY;
+        return com.sonicle.webtop.drm.jooq.Keys.PROFILES_MEMBERS_PKEY;
     }
 
     @java.lang.Override
     public java.util.List<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord>> getKeys() {
-        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.PROFILES_USERS_PKEY);
+        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.ProfilesMembersRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.PROFILES_MEMBERS_PKEY);
     }
 
     @java.lang.Override

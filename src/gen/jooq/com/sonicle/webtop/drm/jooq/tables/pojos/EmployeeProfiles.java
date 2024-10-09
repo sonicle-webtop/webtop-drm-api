@@ -24,6 +24,7 @@ public class EmployeeProfiles implements java.io.Serializable {
     private java.lang.String  headquartersCode;
     private java.lang.Boolean noStamping;
     private java.lang.Integer minimumNumberOfHoursPerTicket;
+    private java.lang.String  stampingMode;
 
     public EmployeeProfiles() {}
 
@@ -39,6 +40,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.headquartersCode = value.headquartersCode;
         this.noStamping = value.noStamping;
         this.minimumNumberOfHoursPerTicket = value.minimumNumberOfHoursPerTicket;
+        this.stampingMode = value.stampingMode;
     }
 
     public EmployeeProfiles(
@@ -52,7 +54,8 @@ public class EmployeeProfiles implements java.io.Serializable {
         java.lang.Integer hourProfileId,
         java.lang.String  headquartersCode,
         java.lang.Boolean noStamping,
-        java.lang.Integer minimumNumberOfHoursPerTicket
+        java.lang.Integer minimumNumberOfHoursPerTicket,
+        java.lang.String  stampingMode
     ) {
         this.id = id;
         this.domainId = domainId;
@@ -65,6 +68,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.headquartersCode = headquartersCode;
         this.noStamping = noStamping;
         this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+        this.stampingMode = stampingMode;
     }
 
     /**
@@ -221,6 +225,20 @@ public class EmployeeProfiles implements java.io.Serializable {
         this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
     }
 
+    /**
+     * Getter for <code>drm.employee_profiles.stamping_mode</code>.
+     */
+    public java.lang.String getStampingMode() {
+        return this.stampingMode;
+    }
+
+    /**
+     * Setter for <code>drm.employee_profiles.stamping_mode</code>.
+     */
+    public void setStampingMode(java.lang.String stampingMode) {
+        this.stampingMode = stampingMode;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("EmployeeProfiles (");
@@ -236,6 +254,7 @@ public class EmployeeProfiles implements java.io.Serializable {
         sb.append(", ").append(headquartersCode);
         sb.append(", ").append(noStamping);
         sb.append(", ").append(minimumNumberOfHoursPerTicket);
+        sb.append(", ").append(stampingMode);
 
         sb.append(")");
         return sb.toString();

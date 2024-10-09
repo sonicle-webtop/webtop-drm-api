@@ -43,6 +43,7 @@ public class TimetableSettings implements java.io.Serializable {
     private java.lang.Integer minimumNumberOfHoursPerTicket;
     private java.lang.Boolean ticketManagement;
     private java.lang.Boolean automaticOvertime;
+    private java.lang.String  defaultStampingMode;
 
     public TimetableSettings() {}
 
@@ -77,6 +78,7 @@ public class TimetableSettings implements java.io.Serializable {
         this.minimumNumberOfHoursPerTicket = value.minimumNumberOfHoursPerTicket;
         this.ticketManagement = value.ticketManagement;
         this.automaticOvertime = value.automaticOvertime;
+        this.defaultStampingMode = value.defaultStampingMode;
     }
 
     public TimetableSettings(
@@ -109,7 +111,8 @@ public class TimetableSettings implements java.io.Serializable {
         java.lang.String  defaultCausalMedicalVisit,
         java.lang.Integer minimumNumberOfHoursPerTicket,
         java.lang.Boolean ticketManagement,
-        java.lang.Boolean automaticOvertime
+        java.lang.Boolean automaticOvertime,
+        java.lang.String  defaultStampingMode
     ) {
         this.timetableSettingId = timetableSettingId;
         this.domainId = domainId;
@@ -141,6 +144,7 @@ public class TimetableSettings implements java.io.Serializable {
         this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
         this.ticketManagement = ticketManagement;
         this.automaticOvertime = automaticOvertime;
+        this.defaultStampingMode = defaultStampingMode;
     }
 
     /**
@@ -563,6 +567,20 @@ public class TimetableSettings implements java.io.Serializable {
         this.automaticOvertime = automaticOvertime;
     }
 
+    /**
+     * Getter for <code>drm.timetable_settings.default_stamping_mode</code>.
+     */
+    public java.lang.String getDefaultStampingMode() {
+        return this.defaultStampingMode;
+    }
+
+    /**
+     * Setter for <code>drm.timetable_settings.default_stamping_mode</code>.
+     */
+    public void setDefaultStampingMode(java.lang.String defaultStampingMode) {
+        this.defaultStampingMode = defaultStampingMode;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("TimetableSettings (");
@@ -597,6 +615,7 @@ public class TimetableSettings implements java.io.Serializable {
         sb.append(", ").append(minimumNumberOfHoursPerTicket);
         sb.append(", ").append(ticketManagement);
         sb.append(", ").append(automaticOvertime);
+        sb.append(", ").append(defaultStampingMode);
 
         sb.append(")");
         return sb.toString();

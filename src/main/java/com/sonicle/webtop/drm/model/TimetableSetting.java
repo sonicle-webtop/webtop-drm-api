@@ -71,6 +71,7 @@ public class TimetableSetting {
 	private Integer minimumNumberOfHoursPerTicket;
 	private Boolean ticketManagement;
 	private Boolean automaticOvertime;
+	private String defaultStampingMode;
 	
 	private List<HolidayDate> holidayDates = new ArrayList();
 
@@ -320,6 +321,14 @@ public class TimetableSetting {
 
 	public void setAutomaticOvertime(Boolean automaticOvertime) {
 		this.automaticOvertime = automaticOvertime;
+	}
+	
+	public String getDefaultStampingMode() {
+		return defaultStampingMode;
+	}
+	
+	public void setDefaultStampingMode(String mode) {
+		this.defaultStampingMode = mode;
 	}
 
 }

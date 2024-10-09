@@ -14,12 +14,12 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_activities</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_ACTIVITIES = org.jooq.impl.Internal.createSequence("seq_activities", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 64, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_ACTIVITIES = org.jooq.impl.Internal.createSequence("seq_activities", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_activities_groups</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_ACTIVITIES_GROUPS = org.jooq.impl.Internal.createSequence("seq_activities_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 18, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_ACTIVITIES_GROUPS = org.jooq.impl.Internal.createSequence("seq_activities_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_business_trips</code>
@@ -29,12 +29,12 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_companies</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_COMPANIES = org.jooq.impl.Internal.createSequence("seq_companies", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 29, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_COMPANIES = org.jooq.impl.Internal.createSequence("seq_companies", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_companies_users</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_COMPANIES_USERS = org.jooq.impl.Internal.createSequence("seq_companies_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 27, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_COMPANIES_USERS = org.jooq.impl.Internal.createSequence("seq_companies_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_cost_types</code>
@@ -44,12 +44,12 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_doc_statuses</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_DOC_STATUSES = org.jooq.impl.Internal.createSequence("seq_doc_statuses", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 14, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_DOC_STATUSES = org.jooq.impl.Internal.createSequence("seq_doc_statuses", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_doc_statuses_groups</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_DOC_STATUSES_GROUPS = org.jooq.impl.Internal.createSequence("seq_doc_statuses_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 20, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_DOC_STATUSES_GROUPS = org.jooq.impl.Internal.createSequence("seq_doc_statuses_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_employee_profiles</code>
@@ -74,12 +74,12 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_folders_groups</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_FOLDERS_GROUPS = org.jooq.impl.Internal.createSequence("seq_folders_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 17, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_FOLDERS_GROUPS = org.jooq.impl.Internal.createSequence("seq_folders_groups", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_groups_users</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_GROUPS_USERS = org.jooq.impl.Internal.createSequence("seq_groups_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 5, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_GROUPS_USERS = org.jooq.impl.Internal.createSequence("seq_groups_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_holiday_dates</code>
@@ -94,7 +94,7 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_jobs</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_JOBS = org.jooq.impl.Internal.createSequence("seq_jobs", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 4, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_JOBS = org.jooq.impl.Internal.createSequence("seq_jobs", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_leave_request_documents</code>
@@ -134,7 +134,7 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_profiles_masterdata</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_PROFILES_MASTERDATA = org.jooq.impl.Internal.createSequence("seq_profiles_masterdata", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 15, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_PROFILES_MASTERDATA = org.jooq.impl.Internal.createSequence("seq_profiles_masterdata", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_profiles_members</code>
@@ -147,24 +147,19 @@ public class Sequences {
     public static final org.jooq.Sequence<java.lang.Long> SEQ_PROFILES_SUPERVISED_USERS = org.jooq.impl.Internal.createSequence("seq_profiles_supervised_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
-     * The sequence <code>drm.seq_profiles_users</code>
-     */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_PROFILES_USERS = org.jooq.impl.Internal.createSequence("seq_profiles_users", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
-
-    /**
      * The sequence <code>drm.seq_ticket_categories</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKET_CATEGORIES = org.jooq.impl.Internal.createSequence("seq_ticket_categories", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 62, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKET_CATEGORIES = org.jooq.impl.Internal.createSequence("seq_ticket_categories", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_tickets</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKETS = org.jooq.impl.Internal.createSequence("seq_tickets", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 4, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKETS = org.jooq.impl.Internal.createSequence("seq_tickets", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_tickets_settings</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKETS_SETTINGS = org.jooq.impl.Internal.createSequence("seq_tickets_settings", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 37, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_TICKETS_SETTINGS = org.jooq.impl.Internal.createSequence("seq_tickets_settings", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_timetable_event</code>
@@ -189,25 +184,25 @@ public class Sequences {
     /**
      * The sequence <code>drm.seq_work_report_details</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORT_DETAILS = org.jooq.impl.Internal.createSequence("seq_work_report_details", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 51, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORT_DETAILS = org.jooq.impl.Internal.createSequence("seq_work_report_details", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_work_reports</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS = org.jooq.impl.Internal.createSequence("seq_work_reports", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 4, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS = org.jooq.impl.Internal.createSequence("seq_work_reports", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_work_reports_count</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS_COUNT = org.jooq.impl.Internal.createSequence("seq_work_reports_count", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 1148, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS_COUNT = org.jooq.impl.Internal.createSequence("seq_work_reports_count", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_work_reports_settings</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS_SETTINGS = org.jooq.impl.Internal.createSequence("seq_work_reports_settings", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 13, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_REPORTS_SETTINGS = org.jooq.impl.Internal.createSequence("seq_work_reports_settings", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 
     /**
      * The sequence <code>drm.seq_work_types</code>
      */
-    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_TYPES = org.jooq.impl.Internal.createSequence("seq_work_types", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), 18, null, null, null, false, null);
+    public static final org.jooq.Sequence<java.lang.Long> SEQ_WORK_TYPES = org.jooq.impl.Internal.createSequence("seq_work_types", com.sonicle.webtop.drm.jooq.Drm.DRM, org.jooq.impl.SQLDataType.BIGINT.nullable(false), null, null, null, null, false, null);
 }

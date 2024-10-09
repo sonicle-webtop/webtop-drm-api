@@ -174,7 +174,12 @@ public class TimetableSettings extends org.jooq.impl.TableImpl<com.sonicle.webto
     /**
      * The column <code>drm.timetable_settings.automatic_overtime</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Boolean> AUTOMATIC_OVERTIME = createField(org.jooq.impl.DSL.name("automatic_overtime"), org.jooq.impl.SQLDataType.BOOLEAN, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.Boolean> AUTOMATIC_OVERTIME = createField(org.jooq.impl.DSL.name("automatic_overtime"), org.jooq.impl.SQLDataType.BOOLEAN.defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+
+    /**
+     * The column <code>drm.timetable_settings.default_stamping_mode</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord, java.lang.String> DEFAULT_STAMPING_MODE = createField(org.jooq.impl.DSL.name("default_stamping_mode"), org.jooq.impl.SQLDataType.VARCHAR(1).nullable(false).defaultValue(org.jooq.impl.DSL.field("'B'::character varying", org.jooq.impl.SQLDataType.VARCHAR)), this, "");
 
     private TimetableSettings(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.TimetableSettingsRecord> aliased) {
         this(alias, aliased, null);

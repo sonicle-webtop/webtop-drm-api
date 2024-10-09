@@ -81,6 +81,11 @@ public class EmployeeProfiles extends org.jooq.impl.TableImpl<com.sonicle.webtop
      */
     public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.EmployeeProfilesRecord, java.lang.Integer> MINIMUM_NUMBER_OF_HOURS_PER_TICKET = createField(org.jooq.impl.DSL.name("minimum_number_of_hours_per_ticket"), org.jooq.impl.SQLDataType.INTEGER, this, "");
 
+    /**
+     * The column <code>drm.employee_profiles.stamping_mode</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.EmployeeProfilesRecord, java.lang.String> STAMPING_MODE = createField(org.jooq.impl.DSL.name("stamping_mode"), org.jooq.impl.SQLDataType.VARCHAR(1), this, "");
+
     private EmployeeProfiles(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.EmployeeProfilesRecord> aliased) {
         this(alias, aliased, null);
     }
@@ -156,11 +161,11 @@ public class EmployeeProfiles extends org.jooq.impl.TableImpl<com.sonicle.webtop
     }
 
     // -------------------------------------------------------------------------
-    // Row11 type methods
+    // Row12 type methods
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row11<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Boolean, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Integer> fieldsRow() {
-        return (org.jooq.Row11) super.fieldsRow();
+    public org.jooq.Row12<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Boolean, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Integer, java.lang.String> fieldsRow() {
+        return (org.jooq.Row12) super.fieldsRow();
     }
 }

@@ -86,12 +86,12 @@ public class Causals extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
 
     @java.lang.Override
     public org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord> getPrimaryKey() {
-        return com.sonicle.webtop.drm.jooq.Keys.TIMETABLE_CAUSALS_PKEY;
+        return com.sonicle.webtop.drm.jooq.Keys.CAUSALS_PKEY;
     }
 
     @java.lang.Override
     public java.util.List<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord>> getKeys() {
-        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.TIMETABLE_CAUSALS_PKEY);
+        return java.util.Arrays.<org.jooq.UniqueKey<com.sonicle.webtop.drm.jooq.tables.records.CausalsRecord>>asList(com.sonicle.webtop.drm.jooq.Keys.CAUSALS_PKEY);
     }
 
     @java.lang.Override

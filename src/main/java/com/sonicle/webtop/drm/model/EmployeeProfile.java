@@ -51,6 +51,7 @@ public class EmployeeProfile {
 	public String headquartersCode;
 	public Boolean noStamping;
 	public Integer minimumNumberOfHoursPerTicket;
+	public String stampingMode;
 
 	public Integer getId() {
 		return id;
@@ -138,6 +139,14 @@ public class EmployeeProfile {
 
 	public void setMinimumNumberOfHoursPerTicket(Integer minimumNumberOfHoursPerTicket) {
 		this.minimumNumberOfHoursPerTicket = minimumNumberOfHoursPerTicket;
+	}
+	
+	public String getStampingMode() {
+		return this.stampingMode;
+	}
+	
+	public void setStampingMode(String mode) {
+		this.stampingMode = mode;
 	}
 
 }

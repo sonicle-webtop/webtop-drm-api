@@ -89,7 +89,7 @@ public class TimetableReportTemp extends org.jooq.impl.TableImpl<com.sonicle.web
     /**
      * The column <code>drm.timetable_report_temp.causal</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.String> CAUSAL = createField(org.jooq.impl.DSL.name("causal"), org.jooq.impl.SQLDataType.VARCHAR(500), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.String> CAUSAL = createField(org.jooq.impl.DSL.name("causal"), org.jooq.impl.SQLDataType.VARCHAR(5), this, "");
 
     /**
      * The column <code>drm.timetable_report_temp.hour</code>.

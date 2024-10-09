@@ -284,6 +284,11 @@ public class Drm extends org.jooq.impl.SchemaImpl {
     public final com.sonicle.webtop.drm.jooq.tables.TimetableEvents TIMETABLE_EVENTS = com.sonicle.webtop.drm.jooq.tables.TimetableEvents.TIMETABLE_EVENTS;
 
     /**
+     * The table <code>drm.timetable_events_copy</code>.
+     */
+    public final com.sonicle.webtop.drm.jooq.tables.TimetableEventsCopy TIMETABLE_EVENTS_COPY = com.sonicle.webtop.drm.jooq.tables.TimetableEventsCopy.TIMETABLE_EVENTS_COPY;
+
+    /**
      * The table <code>drm.timetable_report_temp</code>.
      */
     public final com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp TIMETABLE_REPORT_TEMP = com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp.TIMETABLE_REPORT_TEMP;
@@ -386,7 +391,6 @@ public class Drm extends org.jooq.impl.SchemaImpl {
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_PROFILES_MASTERDATA,
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_PROFILES_MEMBERS,
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_PROFILES_SUPERVISED_USERS,
-            com.sonicle.webtop.drm.jooq.Sequences.SEQ_PROFILES_USERS,
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_TICKET_CATEGORIES,
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_TICKETS,
             com.sonicle.webtop.drm.jooq.Sequences.SEQ_TICKETS_SETTINGS,
@@ -457,6 +461,7 @@ public class Drm extends org.jooq.impl.SchemaImpl {
             com.sonicle.webtop.drm.jooq.tables.Tickets.TICKETS,
             com.sonicle.webtop.drm.jooq.tables.TicketsSettings.TICKETS_SETTINGS,
             com.sonicle.webtop.drm.jooq.tables.TimetableEvents.TIMETABLE_EVENTS,
+            com.sonicle.webtop.drm.jooq.tables.TimetableEventsCopy.TIMETABLE_EVENTS_COPY,
             com.sonicle.webtop.drm.jooq.tables.TimetableReportTemp.TIMETABLE_REPORT_TEMP,
             com.sonicle.webtop.drm.jooq.tables.TimetableSettings.TIMETABLE_SETTINGS,
             com.sonicle.webtop.drm.jooq.tables.TimetableStamp.TIMETABLE_STAMP,

@@ -43,6 +43,7 @@ public class TimetableStamp {
 	private Integer id;
 	private String domainId;
 	private String userId;
+	private String userName;
 	private String type;
 	private DateTime entrance;
 	private DateTime exit;
@@ -70,6 +71,14 @@ public class TimetableStamp {
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	
 	public String getType() {

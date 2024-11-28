@@ -33,6 +33,7 @@
 package com.sonicle.webtop.drm.model;
 
 import org.joda.time.DateTime;
+import org.joda.time.Duration;
 
 /**
  *
@@ -43,9 +44,11 @@ public class TimetableStamp {
 	private Integer id;
 	private String domainId;
 	private String userId;
+	private String userName;
 	private String type;
 	private DateTime entrance;
 	private DateTime exit;
+	private long minutes;
 	private String location;
 
 	public Integer getId() {
@@ -72,6 +75,14 @@ public class TimetableStamp {
 		this.userId = userId;
 	}
 	
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
 	public String getType() {
 		return type;
 	}
@@ -86,6 +97,7 @@ public class TimetableStamp {
 
 	public void setEntrance(DateTime entrance) {
 		this.entrance = entrance;
+		calcMinutes();
 	}
 
 	public DateTime getExit() {
@@ -94,6 +106,18 @@ public class TimetableStamp {
 
 	public void setExit(DateTime exit) {
 		this.exit = exit;
+		calcMinutes();
+	}
+	
+	private void calcMinutes() {
+		if (this.entrance != null && this.exit != null) {
+			Duration d = new Duration(entrance, exit);
+			minutes = d.getStandardMinutes();
+		}
+	}
+
+	public long getMinutes() {
+		return minutes;
 	}
 
 	public String getLocation() {

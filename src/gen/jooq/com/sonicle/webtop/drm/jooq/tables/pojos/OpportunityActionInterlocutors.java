@@ -15,7 +15,7 @@ public class OpportunityActionInterlocutors implements java.io.Serializable {
 
     private java.lang.Integer id;
     private java.lang.Integer opportunityActionId;
-    private java.lang.Integer contactId;
+    private java.lang.String  contactId;
 
     public OpportunityActionInterlocutors() {}
 
@@ -28,7 +28,7 @@ public class OpportunityActionInterlocutors implements java.io.Serializable {
     public OpportunityActionInterlocutors(
         java.lang.Integer id,
         java.lang.Integer opportunityActionId,
-        java.lang.Integer contactId
+        java.lang.String  contactId
     ) {
         this.id = id;
         this.opportunityActionId = opportunityActionId;
@@ -66,14 +66,14 @@ public class OpportunityActionInterlocutors implements java.io.Serializable {
     /**
      * Getter for <code>drm.opportunity_action_interlocutors.contact_id</code>.
      */
-    public java.lang.Integer getContactId() {
+    public java.lang.String getContactId() {
         return this.contactId;
     }
 
     /**
      * Setter for <code>drm.opportunity_action_interlocutors.contact_id</code>.
      */
-    public void setContactId(java.lang.Integer contactId) {
+    public void setContactId(java.lang.String contactId) {
         this.contactId = contactId;
     }
 

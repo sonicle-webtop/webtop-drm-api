@@ -54,7 +54,7 @@ public class WorkReport {
 	private DateTime revisionTimestamp;
 	private Integer revisionSequence;
 	private Integer docStatusId;
-	private Integer contactId;
+	private String contactId;
 	private String customerId;
 	private String customerStatId;
 	private LocalDate fromDate;
@@ -70,7 +70,7 @@ public class WorkReport {
 	private Boolean freeSupport;
 	private Integer businessTripId;
 	private Integer businessTripDays;
-	private Integer eventId;
+	private String eventId;
 	private Integer timetableHours;
 	private String domainId;
 	
@@ -141,11 +141,11 @@ public class WorkReport {
 		this.revisionSequence = revisionSequence;
 	}
 
-	public Integer getContactId() {
+	public String getContactId() {
 		return contactId;
 	}
 
-	public void setContactId(Integer contactId) {
+	public void setContactId(String contactId) {
 		this.contactId = contactId;
 	}
 
@@ -277,11 +277,11 @@ public class WorkReport {
 		this.businessTripDays = businessTripDays;
 	}
 
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 	

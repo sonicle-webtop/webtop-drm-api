@@ -54,7 +54,7 @@ public class Job {
 	private Integer activityId;
 	private String title;
 	private String description;
-	private Integer eventId;
+	private String eventId;
 	private String domainId;
 	private String ticketId;
 	private String number;
@@ -126,11 +126,11 @@ public class Job {
 		this.description = description;
 	}
 
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 		

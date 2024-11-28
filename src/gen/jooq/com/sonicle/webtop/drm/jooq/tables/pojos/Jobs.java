@@ -22,7 +22,7 @@ public class Jobs implements java.io.Serializable {
     private java.lang.String       title;
     private java.lang.String       description;
     private java.lang.Integer      activityId;
-    private java.lang.Integer      eventId;
+    private java.lang.String       eventId;
     private org.joda.time.DateTime startDate;
     private org.joda.time.DateTime endDate;
     private java.lang.String       timezone;
@@ -61,7 +61,7 @@ public class Jobs implements java.io.Serializable {
         java.lang.String       title,
         java.lang.String       description,
         java.lang.Integer      activityId,
-        java.lang.Integer      eventId,
+        java.lang.String       eventId,
         org.joda.time.DateTime startDate,
         org.joda.time.DateTime endDate,
         java.lang.String       timezone,
@@ -216,14 +216,14 @@ public class Jobs implements java.io.Serializable {
     /**
      * Getter for <code>drm.jobs.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
+    public java.lang.String getEventId() {
         return this.eventId;
     }
 
     /**
      * Setter for <code>drm.jobs.event_id</code>.
      */
-    public void setEventId(java.lang.Integer eventId) {
+    public void setEventId(java.lang.String eventId) {
         this.eventId = eventId;
     }
 

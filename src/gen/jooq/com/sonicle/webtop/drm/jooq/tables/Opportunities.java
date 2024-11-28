@@ -139,7 +139,7 @@ public class Opportunities extends org.jooq.impl.TableImpl<com.sonicle.webtop.dr
     /**
      * The column <code>drm.opportunities.event_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord, java.lang.Integer> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunitiesRecord, java.lang.String> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.VARCHAR(32), this, "");
 
     /**
      * The column <code>drm.opportunities.start_date</code>.

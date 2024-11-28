@@ -20,7 +20,7 @@ public class WorkReports implements java.io.Serializable {
     private org.joda.time.DateTime  revisionTimestamp;
     private java.lang.Integer       revisionSequence;
     private java.lang.Integer       docStatusId;
-    private java.lang.Integer       contactId;
+    private java.lang.String        contactId;
     private java.lang.String        customerId;
     private java.lang.String        customerStatId;
     private org.joda.time.LocalDate fromDate;
@@ -38,7 +38,7 @@ public class WorkReports implements java.io.Serializable {
     private java.lang.Short         businessTripDays;
     private java.lang.Integer       number;
     private java.lang.Integer       year;
-    private java.lang.Integer       eventId;
+    private java.lang.String        eventId;
     private java.lang.Integer       timetableHours;
     private java.lang.String        domainId;
 
@@ -83,7 +83,7 @@ public class WorkReports implements java.io.Serializable {
         org.joda.time.DateTime  revisionTimestamp,
         java.lang.Integer       revisionSequence,
         java.lang.Integer       docStatusId,
-        java.lang.Integer       contactId,
+        java.lang.String        contactId,
         java.lang.String        customerId,
         java.lang.String        customerStatId,
         org.joda.time.LocalDate fromDate,
@@ -101,7 +101,7 @@ public class WorkReports implements java.io.Serializable {
         java.lang.Short         businessTripDays,
         java.lang.Integer       number,
         java.lang.Integer       year,
-        java.lang.Integer       eventId,
+        java.lang.String        eventId,
         java.lang.Integer       timetableHours,
         java.lang.String        domainId
     ) {
@@ -236,14 +236,14 @@ public class WorkReports implements java.io.Serializable {
     /**
      * Getter for <code>drm.work_reports.contact_id</code>.
      */
-    public java.lang.Integer getContactId() {
+    public java.lang.String getContactId() {
         return this.contactId;
     }
 
     /**
      * Setter for <code>drm.work_reports.contact_id</code>.
      */
-    public void setContactId(java.lang.Integer contactId) {
+    public void setContactId(java.lang.String contactId) {
         this.contactId = contactId;
     }
 
@@ -488,14 +488,14 @@ public class WorkReports implements java.io.Serializable {
     /**
      * Getter for <code>drm.work_reports.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
+    public java.lang.String getEventId() {
         return this.eventId;
     }
 
     /**
      * Setter for <code>drm.work_reports.event_id</code>.
      */
-    public void setEventId(java.lang.Integer eventId) {
+    public void setEventId(java.lang.String eventId) {
         this.eventId = eventId;
     }
 

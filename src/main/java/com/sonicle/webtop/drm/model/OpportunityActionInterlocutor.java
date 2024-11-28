@@ -40,7 +40,7 @@ public class OpportunityActionInterlocutor {
 
 	public Integer id;
 	public Integer opportunityActionId;
-	public Integer contactId;
+	public String contactId;
 	public String desc;
 
 	public Integer getId() {
@@ -59,11 +59,11 @@ public class OpportunityActionInterlocutor {
 		this.opportunityActionId = opportunityActionId;
 	}
 
-	public Integer getContactId() {
+	public String getContactId() {
 		return contactId;
 	}
 
-	public void setContactId(Integer contactId) {
+	public void setContactId(String contactId) {
 		this.contactId = contactId;
 	}
 

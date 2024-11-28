@@ -74,7 +74,7 @@ public class Jobs extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq.ta
     /**
      * The column <code>drm.jobs.event_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.JobsRecord, java.lang.Integer> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.JobsRecord, java.lang.String> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.VARCHAR(32), this, "");
 
     /**
      * The column <code>drm.jobs.start_date</code>.
@@ -185,7 +185,7 @@ public class Jobs extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq.ta
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row16<java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer> fieldsRow() {
+    public org.jooq.Row16<java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer> fieldsRow() {
         return (org.jooq.Row16) super.fieldsRow();
     }
 }

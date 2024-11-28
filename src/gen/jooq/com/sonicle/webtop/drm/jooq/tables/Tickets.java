@@ -79,7 +79,7 @@ public class Tickets extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     /**
      * The column <code>drm.tickets.event_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TicketsRecord, java.lang.Integer> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TicketsRecord, java.lang.String> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.VARCHAR(32), this, "");
 
     /**
      * The column <code>drm.tickets.date</code>.
@@ -205,7 +205,7 @@ public class Tickets extends org.jooq.impl.TableImpl<com.sonicle.webtop.drm.jooq
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row20<java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, org.joda.time.DateTime, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String> fieldsRow() {
+    public org.jooq.Row20<java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, org.joda.time.DateTime, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String> fieldsRow() {
         return (org.jooq.Row20) super.fieldsRow();
     }
 }

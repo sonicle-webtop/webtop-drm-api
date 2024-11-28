@@ -35,7 +35,7 @@ public class Opportunities implements java.io.Serializable {
     private java.lang.String            signedBy;
     private java.lang.Boolean           signature;
     private java.lang.Boolean           success;
-    private java.lang.Integer           eventId;
+    private java.lang.String            eventId;
     private org.joda.time.LocalDateTime startDate;
     private org.joda.time.LocalDateTime endDate;
 
@@ -92,7 +92,7 @@ public class Opportunities implements java.io.Serializable {
         java.lang.String            signedBy,
         java.lang.Boolean           signature,
         java.lang.Boolean           success,
-        java.lang.Integer           eventId,
+        java.lang.String            eventId,
         org.joda.time.LocalDateTime startDate,
         org.joda.time.LocalDateTime endDate
     ) {
@@ -434,14 +434,14 @@ public class Opportunities implements java.io.Serializable {
     /**
      * Getter for <code>drm.opportunities.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
+    public java.lang.String getEventId() {
         return this.eventId;
     }
 
     /**
      * Setter for <code>drm.opportunities.event_id</code>.
      */
-    public void setEventId(java.lang.Integer eventId) {
+    public void setEventId(java.lang.String eventId) {
         this.eventId = eventId;
     }
 

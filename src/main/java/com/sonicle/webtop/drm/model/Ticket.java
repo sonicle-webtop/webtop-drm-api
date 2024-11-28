@@ -54,7 +54,7 @@ public class Ticket {
 	private Integer ticketCategoryId;
 	private String title;
 	private String description;
-	private Integer eventId;
+	private String eventId;
 	private String domainId;
 	private String priorityId;
 	private Integer statusId;
@@ -186,11 +186,11 @@ public class Ticket {
 		this.suggestion = suggestion;
 	}
 	
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 		

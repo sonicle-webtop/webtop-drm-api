@@ -68,7 +68,7 @@ public class Opportunity {
 	private String signedBy;
 	private Boolean signature;
 	private Boolean success;
-	private Integer eventId;
+	private String eventId;
 
 	private List<OpportunityInterlocutor> interlocutors = new ArrayList();
 	private List<OpportunityAction> actions = new ArrayList();
@@ -266,11 +266,11 @@ public class Opportunity {
 		this.success = success;
 	}
 
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 

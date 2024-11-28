@@ -54,7 +54,7 @@ public class OpportunityAction {
 	private String place;
 	private String subsequentActions;
 	private Integer activityId;
-	private Integer eventId;
+	private String eventId;
 
 	private List<OpportunityActionInterlocutor> actionInterlocutors = new ArrayList();
 	private List<OpportunityActionDocument> actionDocuments = new ArrayList();
@@ -139,11 +139,11 @@ public class OpportunityAction {
 		this.activityId = activityId;
 	}
 
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 

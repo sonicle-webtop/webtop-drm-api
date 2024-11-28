@@ -324,15 +324,15 @@ public class OpportunitiesRecord extends org.jooq.impl.UpdatableRecordImpl<Oppor
     /**
      * Setter for <code>drm.opportunities.event_id</code>.
      */
-    public void setEventId(java.lang.Integer value) {
+    public void setEventId(java.lang.String value) {
         set(22, value);
     }
 
     /**
      * Getter for <code>drm.opportunities.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
-        return (java.lang.Integer) get(22);
+    public java.lang.String getEventId() {
+        return (java.lang.String) get(22);
     }
 
     /**
@@ -386,7 +386,7 @@ public class OpportunitiesRecord extends org.jooq.impl.UpdatableRecordImpl<Oppor
     /**
      * Create a detached, initialised OpportunitiesRecord
      */
-    public OpportunitiesRecord(java.lang.Integer id, java.lang.String domainId, java.lang.Integer companyId, java.lang.String operatorId, java.lang.String executedWith, java.lang.String customerId, java.lang.String customerStatId, java.lang.String sector, java.lang.String description, java.lang.String place, java.lang.String objective, java.lang.Integer causalId, java.lang.Integer activityId, java.lang.String objective_2, java.lang.String result, java.lang.String discoveries, java.lang.String customerPotential, java.lang.String notes, java.lang.Integer statusId, java.lang.String signedBy, java.lang.Boolean signature, java.lang.Boolean success, java.lang.Integer eventId, org.joda.time.LocalDateTime startDate, org.joda.time.LocalDateTime endDate) {
+    public OpportunitiesRecord(java.lang.Integer id, java.lang.String domainId, java.lang.Integer companyId, java.lang.String operatorId, java.lang.String executedWith, java.lang.String customerId, java.lang.String customerStatId, java.lang.String sector, java.lang.String description, java.lang.String place, java.lang.String objective, java.lang.Integer causalId, java.lang.Integer activityId, java.lang.String objective_2, java.lang.String result, java.lang.String discoveries, java.lang.String customerPotential, java.lang.String notes, java.lang.Integer statusId, java.lang.String signedBy, java.lang.Boolean signature, java.lang.Boolean success, java.lang.String eventId, org.joda.time.LocalDateTime startDate, org.joda.time.LocalDateTime endDate) {
         super(com.sonicle.webtop.drm.jooq.tables.Opportunities.OPPORTUNITIES);
 
         setId(id);

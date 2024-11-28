@@ -37,6 +37,7 @@ public class TimetableReportTemp implements java.io.Serializable {
     private java.lang.String            causalId;
     private java.lang.String            totalLineHour;
     private java.lang.Boolean           hasRequests;
+    private java.lang.String            ticket;
 
     public TimetableReportTemp() {}
 
@@ -65,6 +66,7 @@ public class TimetableReportTemp implements java.io.Serializable {
         this.causalId = value.causalId;
         this.totalLineHour = value.totalLineHour;
         this.hasRequests = value.hasRequests;
+        this.ticket = value.ticket;
     }
 
     public TimetableReportTemp(
@@ -91,7 +93,8 @@ public class TimetableReportTemp implements java.io.Serializable {
         java.lang.String            other,
         java.lang.String            causalId,
         java.lang.String            totalLineHour,
-        java.lang.Boolean           hasRequests
+        java.lang.Boolean           hasRequests,
+        java.lang.String            ticket
     ) {
         this.id = id;
         this.domainId = domainId;
@@ -117,6 +120,7 @@ public class TimetableReportTemp implements java.io.Serializable {
         this.causalId = causalId;
         this.totalLineHour = totalLineHour;
         this.hasRequests = hasRequests;
+        this.ticket = ticket;
     }
 
     /**
@@ -455,6 +459,20 @@ public class TimetableReportTemp implements java.io.Serializable {
         this.hasRequests = hasRequests;
     }
 
+    /**
+     * Getter for <code>drm.timetable_report_temp.ticket</code>.
+     */
+    public java.lang.String getTicket() {
+        return this.ticket;
+    }
+
+    /**
+     * Setter for <code>drm.timetable_report_temp.ticket</code>.
+     */
+    public void setTicket(java.lang.String ticket) {
+        this.ticket = ticket;
+    }
+
     @Override
     public String toString() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("TimetableReportTemp (");
@@ -483,6 +501,7 @@ public class TimetableReportTemp implements java.io.Serializable {
         sb.append(", ").append(causalId);
         sb.append(", ").append(totalLineHour);
         sb.append(", ").append(hasRequests);
+        sb.append(", ").append(ticket);
 
         sb.append(")");
         return sb.toString();

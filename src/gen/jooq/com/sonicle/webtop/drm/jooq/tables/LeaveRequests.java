@@ -129,7 +129,7 @@ public class LeaveRequests extends org.jooq.impl.TableImpl<com.sonicle.webtop.dr
     /**
      * The column <code>drm.leave_requests.event_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.LeaveRequestsRecord, java.lang.Integer> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.LeaveRequestsRecord, java.lang.String> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.VARCHAR(32), this, "");
 
     private LeaveRequests(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.LeaveRequestsRecord> aliased) {
         this(alias, aliased, null);
@@ -210,7 +210,7 @@ public class LeaveRequests extends org.jooq.impl.TableImpl<com.sonicle.webtop.dr
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row21<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, org.joda.time.LocalDate, org.joda.time.LocalDate, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.Boolean, java.lang.Boolean, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.String, java.lang.Boolean, java.lang.Integer> fieldsRow() {
+    public org.jooq.Row21<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, org.joda.time.LocalDate, org.joda.time.LocalDate, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.Boolean, java.lang.Boolean, org.joda.time.DateTime, org.joda.time.DateTime, java.lang.String, java.lang.Boolean, java.lang.String> fieldsRow() {
         return (org.jooq.Row21) super.fieldsRow();
     }
 }

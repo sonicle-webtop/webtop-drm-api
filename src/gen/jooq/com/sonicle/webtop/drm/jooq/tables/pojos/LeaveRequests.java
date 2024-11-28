@@ -33,7 +33,7 @@ public class LeaveRequests implements java.io.Serializable {
     private org.joda.time.DateTime  managerCancRespTimetamp;
     private java.lang.String        cancReason;
     private java.lang.Boolean       cancResult;
-    private java.lang.Integer       eventId;
+    private java.lang.String        eventId;
 
     public LeaveRequests() {}
 
@@ -82,7 +82,7 @@ public class LeaveRequests implements java.io.Serializable {
         org.joda.time.DateTime  managerCancRespTimetamp,
         java.lang.String        cancReason,
         java.lang.Boolean       cancResult,
-        java.lang.Integer       eventId
+        java.lang.String        eventId
     ) {
         this.leaveRequestId = leaveRequestId;
         this.domainId = domainId;
@@ -390,14 +390,14 @@ public class LeaveRequests implements java.io.Serializable {
     /**
      * Getter for <code>drm.leave_requests.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
+    public java.lang.String getEventId() {
         return this.eventId;
     }
 
     /**
      * Setter for <code>drm.leave_requests.event_id</code>.
      */
-    public void setEventId(java.lang.Integer eventId) {
+    public void setEventId(java.lang.String eventId) {
         this.eventId = eventId;
     }
 

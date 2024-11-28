@@ -39,7 +39,7 @@ public class OpportunityActionInterlocutors extends org.jooq.impl.TableImpl<com.
     /**
      * The column <code>drm.opportunity_action_interlocutors.contact_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunityActionInterlocutorsRecord, java.lang.Integer> CONTACT_ID = createField(org.jooq.impl.DSL.name("contact_id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunityActionInterlocutorsRecord, java.lang.String> CONTACT_ID = createField(org.jooq.impl.DSL.name("contact_id"), org.jooq.impl.SQLDataType.VARCHAR(32).nullable(false), this, "");
 
     private OpportunityActionInterlocutors(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.OpportunityActionInterlocutorsRecord> aliased) {
         this(alias, aliased, null);
@@ -120,7 +120,7 @@ public class OpportunityActionInterlocutors extends org.jooq.impl.TableImpl<com.
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row3<java.lang.Integer, java.lang.Integer, java.lang.Integer> fieldsRow() {
+    public org.jooq.Row3<java.lang.Integer, java.lang.Integer, java.lang.String> fieldsRow() {
         return (org.jooq.Row3) super.fieldsRow();
     }
 }

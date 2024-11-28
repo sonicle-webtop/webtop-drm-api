@@ -58,7 +58,7 @@ public class LeaveRequest {
 	private Boolean cancRequest;
 	private String cancReason;
 	private Boolean cancResult;
-	private Integer eventId;
+	private String eventId;
 
 	private List<LeaveRequestDocument> documents = new ArrayList();
 
@@ -198,11 +198,11 @@ public class LeaveRequest {
 		this.status = status;
 	}
 
-	public Integer getEventId() {
+	public String getEventId() {
 		return eventId;
 	}
 
-	public void setEventId(Integer eventId) {
+	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 }

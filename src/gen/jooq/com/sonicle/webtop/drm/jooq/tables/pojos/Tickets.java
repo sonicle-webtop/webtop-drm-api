@@ -23,7 +23,7 @@ public class Tickets implements java.io.Serializable {
     private java.lang.String       title;
     private java.lang.String       description;
     private java.lang.Integer      ticketCategoryId;
-    private java.lang.Integer      eventId;
+    private java.lang.String       eventId;
     private org.joda.time.DateTime date;
     private java.lang.String       timezone;
     private java.lang.String       priorityId;
@@ -70,7 +70,7 @@ public class Tickets implements java.io.Serializable {
         java.lang.String       title,
         java.lang.String       description,
         java.lang.Integer      ticketCategoryId,
-        java.lang.Integer      eventId,
+        java.lang.String       eventId,
         org.joda.time.DateTime date,
         java.lang.String       timezone,
         java.lang.String       priorityId,
@@ -246,14 +246,14 @@ public class Tickets implements java.io.Serializable {
     /**
      * Getter for <code>drm.tickets.event_id</code>.
      */
-    public java.lang.Integer getEventId() {
+    public java.lang.String getEventId() {
         return this.eventId;
     }
 
     /**
      * Setter for <code>drm.tickets.event_id</code>.
      */
-    public void setEventId(java.lang.Integer eventId) {
+    public void setEventId(java.lang.String eventId) {
         this.eventId = eventId;
     }
 

@@ -69,7 +69,7 @@ public class OpportunityActions extends org.jooq.impl.TableImpl<com.sonicle.webt
     /**
      * The column <code>drm.opportunity_actions.event_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunityActionsRecord, java.lang.Integer> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.INTEGER, this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.OpportunityActionsRecord, java.lang.String> EVENT_ID = createField(org.jooq.impl.DSL.name("event_id"), org.jooq.impl.SQLDataType.VARCHAR(32), this, "");
 
     /**
      * The column <code>drm.opportunity_actions.start_date</code>.
@@ -160,7 +160,7 @@ public class OpportunityActions extends org.jooq.impl.TableImpl<com.sonicle.webt
     // -------------------------------------------------------------------------
 
     @java.lang.Override
-    public org.jooq.Row11<java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, org.joda.time.LocalDateTime, org.joda.time.LocalDateTime> fieldsRow() {
+    public org.jooq.Row11<java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, org.joda.time.LocalDateTime, org.joda.time.LocalDateTime> fieldsRow() {
         return (org.jooq.Row11) super.fieldsRow();
     }
 }

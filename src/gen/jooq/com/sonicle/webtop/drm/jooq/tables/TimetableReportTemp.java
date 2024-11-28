@@ -39,7 +39,7 @@ public class TimetableReportTemp extends org.jooq.impl.TableImpl<com.sonicle.web
     /**
      * The column <code>drm.timetable_report_temp.user_id</code>.
      */
-    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.String> USER_ID = createField(org.jooq.impl.DSL.name("user_id"), org.jooq.impl.SQLDataType.VARCHAR(36).nullable(false), this, "");
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.String> USER_ID = createField(org.jooq.impl.DSL.name("user_id"), org.jooq.impl.SQLDataType.VARCHAR(40).nullable(false), this, "");
 
     /**
      * The column <code>drm.timetable_report_temp.company_id</code>.
@@ -145,6 +145,11 @@ public class TimetableReportTemp extends org.jooq.impl.TableImpl<com.sonicle.web
      * The column <code>drm.timetable_report_temp.has_requests</code>.
      */
     public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.Boolean> HAS_REQUESTS = createField(org.jooq.impl.DSL.name("has_requests"), org.jooq.impl.SQLDataType.BOOLEAN.defaultValue(org.jooq.impl.DSL.field("false", org.jooq.impl.SQLDataType.BOOLEAN)), this, "");
+
+    /**
+     * The column <code>drm.timetable_report_temp.ticket</code>.
+     */
+    public final org.jooq.TableField<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord, java.lang.String> TICKET = createField(org.jooq.impl.DSL.name("ticket"), org.jooq.impl.SQLDataType.VARCHAR, this, "");
 
     private TimetableReportTemp(org.jooq.Name alias, org.jooq.Table<com.sonicle.webtop.drm.jooq.tables.records.TimetableReportTempRecord> aliased) {
         this(alias, aliased, null);

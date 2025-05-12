@@ -32,6 +32,7 @@
  */
 package com.sonicle.webtop.drm.model;
 
+import com.sonicle.commons.LangUtils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -216,7 +217,7 @@ public class TimetableSetting {
 	}
 
 	public void setMedicalVisitsAutomaticallyApproved(Boolean medicalVisitsAutomaticallyApproved) {
-		this.medicalVisitsAutomaticallyApproved = medicalVisitsAutomaticallyApproved;
+		this.medicalVisitsAutomaticallyApproved = LangUtils.coalesce(medicalVisitsAutomaticallyApproved, false);
 	}
 
 	public String getCalendarUserId() {
@@ -248,7 +249,7 @@ public class TimetableSetting {
 	}
 
 	public void setSicknessAutomaticallyApproved(Boolean sicknessAutomaticallyApproved) {
-		this.sicknessAutomaticallyApproved = sicknessAutomaticallyApproved;
+		this.sicknessAutomaticallyApproved = LangUtils.coalesce(sicknessAutomaticallyApproved, false);
 	}
 
 	public String getDefaultCausalWorkingHours() {
